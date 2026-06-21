@@ -2,369 +2,344 @@
 <html lang="en">
 <head>
   <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>Onyeka Nwokike | Software Developer &amp; AI Researcher</title>
-  <meta content="Portfolio of Onyeka Nwokike – Software Developer, AI Researcher, and Agricultural Engineer. Specializing in NLP, intelligent software, and engineering for impact." name="description"/>
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Onyeka Nwokike — Software Engineer (AI/Data)</title>
+  <meta name="description" content="Onyeka Nwokike — Software Engineer specializing in Python, Django, Flet, AI/ML, data analysis, and SEO. Web and mobile applications, AI agents, APIs, and data tools."/>
+
+  <!-- Theme: set BEFORE paint to avoid flash -->
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('theme') || 'system';
+        var sysDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var dark = saved === 'dark' || (saved === 'system' && sysDark);
+        document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  
   <link href="css/style.css" rel="stylesheet"/>
   <link href="images/FB_IMG.jpg" rel="icon"/>
 </head>
 <body>
-  <nav class="navbar">
-    <div class="container nav-row">
-      <a href="#" class="logo">Onyeka<span class="dot">.</span></a>
-      
-      <div class="nav-actions">
-        <button id="themeToggle" title="Toggle dark mode">
-          <i class="fas fa-moon" id="themeIcon"></i>
-        </button>
-        <button aria-label="Open menu" class="menu-btn" id="menuBtn">
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </button>
-      </div>
-
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#top" class="nav-logo">Onyeka Nwokike</a>
       <ul class="nav-links" id="navLinks">
-        <li><a class="nav-link" href="#about">About</a></li>
-        <li><a class="nav-link" href="#skills">Stack</a></li>
-        <li><a class="nav-link" href="#projects">Projects</a></li>
-        <li><a class="nav-link" href="#research">Research</a></li>
-        <li><a class="nav-link" href="services.html">Services</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="mailto:nwokikeonyeka@gmail.com">Contact</a></li>
       </ul>
-    </div>
-
-    <div class="mobile-menu" id="mobileMenu">
-      <div class="mobile-header">
-          <span class="logo">Onyeka<span class="dot">.</span></span>
-          <button aria-label="Close menu" class="close-btn" id="closeMenu">×</button>
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-toggle" title="Switch theme" aria-label="Switch theme">
+          <i class="fas fa-sun icon-light" aria-hidden="true"></i>
+          <i class="fas fa-moon icon-dark" aria-hidden="true"></i>
+          <i class="fas fa-desktop icon-system" aria-hidden="true"></i>
+        </button>
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
       </div>
-      <ul>
-        <li><a class="nav-link" href="#about">About</a></li>
-        <li><a class="nav-link" href="#skills">Stack</a></li>
-        <li><a class="nav-link" href="#projects">Projects</a></li>
-        <li><a class="nav-link" href="#research">Research</a></li>
-        <li><a class="nav-link" href="services.html">Services</a></li>
-      </ul>
     </div>
   </nav>
 
-  <main>
+  <div class="mobile-menu" id="mobileMenu">
+    <button aria-label="Close menu" class="close-btn" id="closeMenu">×</button>
+    <ul>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="mailto:nwokikeonyeka@gmail.com">Contact</a></li>
+    </ul>
+  </div>
+
+  <main id="top">
+
+    <!-- HERO -->
     <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-text">
-          <div class="badge">Available for hire</div>
-          <h1>Onyeka Nwokike</h1>
-          <h2 class="subtitle">
-            <span class="typewriter" id="typewriter-text"></span><span class="cursor">|</span>
-          </h2>
-          <p class="desc">
-            <strong>Software Developer | AI Researcher | Agricultural & Bioresources Engineer</strong>.<br>
-            I build intelligent software, engineer solutions for social impact, and conduct NLP research for Africa.
-          </p>
-          
-          <div class="hero-buttons">
-            <a class="btn primary" href="#projects">View Work</a>
-            <a class="btn secondary" href="pdfs/CV ONYEKA NWOKIKE .pdf" target="_blank">Download CV</a>
-          </div>
-
-          <div class="socials">
-            <a aria-label="GitHub" href="https://github.com/Nwokike" target="_blank" class="social-badge github">
-              <i class="fab fa-github"></i> GitHub
-            </a>
-            <a aria-label="LinkedIn" href="https://www.linkedin.com/in/onyeka-nwokike" target="_blank" class="social-badge linkedin">
-              <i class="fab fa-linkedin"></i> LinkedIn
-            </a>
-            <a aria-label="Hugging Face" href="https://huggingface.co/nwokikeonyeka" target="_blank" class="social-badge huggingface">
-               <i class="fas fa-face-smile"></i> Hugging Face
-            </a>
-            <a aria-label="Email" href="mailto:nwokikeonyeka@gmail.com" class="social-badge email">
-              <i class="fas fa-envelope"></i> Email
-            </a>
-          </div>
-        </div>
-        <div class="hero-pic-wrap">
-          <img alt="Onyeka Nwokike" class="hero-pic" src="images/FB_IMG.jpg" onerror="this.src='https://ui-avatars.com/api/?name=Onyeka+Nwokike&background=17b1a7&color=fff&size=300';"/>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="about">
       <div class="container">
-        <h2 class="section-title">About Me</h2>
-        <p class="about-text">
-          I am a <strong>Software Developer</strong> and <strong>Agricultural Engineer</strong> passionate about solving real-world problems. 
-          Recently, my focus has expanded into <strong>AI Research</strong>, specifically working on Natural Language Processing (NLP) for African languages. 
-          I build clean, responsive, and intelligent products that empower users and businesses.
+        <p class="eyebrow">Enugu, Nigeria · Available for hire</p>
+        <h1 class="hero-title">Onyeka Nwokike</h1>
+        <p class="hero-sub">Software Engineer (AI/Data) — Agricultural &amp; Bioresources Engineer</p>
+        <p class="hero-lede">
+          Software engineer specializing in Python, Django, Flet, AI/ML, data analysis, and SEO. I build web and mobile applications, AI agents, APIs, and data tools for clients in Nigeria and internationally.
         </p>
-      </div>
-    </section>
-
-    <section class="section" id="skills">
-      <div class="container">
-        <h2 class="section-title">Tech Stack</h2>
-        <div class="skills-wrapper">
-            <div class="skill-category">
-                <h3><i class="fab fa-python"></i> Primary Language</h3>
-                <div class="skills-list">
-                    <span class="skill-badge python"><i class="fab fa-python"></i> Python</span>
-                </div>
-            </div>
-            <div class="skill-category">
-                <h3><i class="fas fa-laptop-code"></i> Web Front End</h3>
-                <div class="skills-list">
-                    <span class="skill-badge html"><i class="fab fa-html5"></i> HTML5/CSS3</span>
-                    <span class="skill-badge js"><i class="fab fa-js"></i> JavaScript</span>
-                    <span class="skill-badge htmx"><i class="fas fa-bolt"></i> HTMX</span>
-                    <span class="skill-badge tailwind"><i class="fas fa-wind"></i> Tailwind</span>
-                </div>
-            </div>
-            <div class="skill-category">
-                <h3><i class="fas fa-server"></i> Backend Frameworks</h3>
-                <div class="skills-list">
-                    <span class="skill-badge django"><i class="fas fa-leaf"></i> Django</span>
-                    <span class="skill-badge fastapi"><i class="fas fa-plug"></i> FastAPI</span>
-                    <span class="skill-badge streamlit"><i class="fas fa-chart-line"></i> Streamlit</span>
-                </div>
-            </div>
-            <div class="skill-category">
-                <h3><i class="fas fa-database"></i> Databases</h3>
-                <div class="skills-list">
-                    <span class="skill-badge postgres"><i class="fas fa-database"></i> PostgreSQL</span>
-                    <span class="skill-badge mysql"><i class="fas fa-database"></i> MySQL</span>
-                    <span class="skill-badge sqlite"><i class="fas fa-database"></i> SQLite</span>
-                </div>
-            </div>
-            <div class="skill-category">
-                <h3><i class="fas fa-brain"></i> Data & AI</h3>
-                <div class="skills-list">
-                    <span class="skill-badge hf"><i class="fas fa-face-smile"></i> Hugging Face</span>
-                    <span class="skill-badge sklearn"><i class="fas fa-cogs"></i> Scikit-learn</span>
-                    <span class="skill-badge pandas"><i class="fas fa-table"></i> Pandas</span>
-                    <span class="skill-badge numpy"><i class="fas fa-square-root-alt"></i> NumPy</span>
-                </div>
-            </div>
-            <div class="skill-category">
-                <h3><i class="fas fa-tools"></i> DevOps & Tools</h3>
-                <div class="skills-list">
-                    <span class="skill-badge docker"><i class="fab fa-docker"></i> Docker</span>
-                    <span class="skill-badge git"><i class="fab fa-git-alt"></i> Git</span>
-                    <span class="skill-badge render"><i class="fas fa-cloud"></i> Render</span>
-                </div>
-            </div>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#work">View work</a>
+          <a class="btn btn-ghost" href="pdfs/CV_ONYEKA_NWOKIKE.pdf" target="_blank">Download CV</a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/Nwokike" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i> GitHub</a>
+          <a href="https://www.linkedin.com/in/onyeka-nwokike" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+          <a href="https://huggingface.co/nwokikeonyeka" target="_blank" aria-label="Hugging Face"><i class="fas fa-face-smile"></i> Hugging Face</a>
+          <a href="mailto:nwokikeonyeka@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i> Email</a>
         </div>
       </div>
     </section>
 
-    <section class="section" id="projects">
-      <div class="container">
-        <h2 class="section-title">Featured Projects</h2>
-        <div class="projects-grid">
-            
-          <article class="project-card">
-            <div class="project-header">
-                <h3>Imara</h3>
-                <span class="status-dot live" title="Live"></span>
-            </div>
-            <p>Digital Bodyguard designed to protect women and girls from online gender-based violence (OGBV) within messaging apps.</p>
-            <div class="project-tags">
-              <span>Python</span><span>AI</span>
-            </div>
-            <div class="project-actions">
-                <a href="https://imara.africa/" target="_blank" class="btn-sm live-btn"><i class="fas fa-external-link-alt"></i> Live App</a>
-                <a href="https://github.com/Nwokike/Imara" target="_blank" class="btn-sm repo-btn"><i class="fab fa-github"></i> Code</a>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-header">
-                <h3>SpanInsight</h3>
-                <span class="status-dot live" title="Live"></span>
-            </div>
-            <p>Data intelligence platform helping businesses and researchers collect forms, analyze data, and build dashboards.</p>
-            <div class="project-tags">
-              <span>Django</span><span>PostgreSQL</span><span>Docker</span>
-            </div>
-            <div class="project-actions">
-                <a href="https://spaninsight.com/" target="_blank" class="btn-sm live-btn"><i class="fas fa-external-link-alt"></i> Live App</a>
-                <a href="https://github.com/Nwokike/spaninsight" target="_blank" class="btn-sm repo-btn"><i class="fab fa-github"></i> Code</a>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-header">
-                <h3>Igbo Archives</h3>
-                <span class="status-dot live" title="Live"></span>
-            </div>
-            <p>A modern PWA for the Igbo Archives, built with Django, HTMX, and Neon database.</p>
-            <div class="project-tags">
-              <span>Django</span><span>HTMX</span><span>Neon</span>
-            </div>
-            <div class="project-actions">
-                <a href="https://igboarchives.com.ng" target="_blank" class="btn-sm live-btn"><i class="fas fa-external-link-alt"></i> Live App</a>
-                <a href="https://github.com/Nwokike/igbo-archives-platform" target="_blank" class="btn-sm repo-btn"><i class="fab fa-github"></i> Code</a>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-header">
-                <h3>Kiriong</h3>
-                <span class="status-dot live" title="Live"></span>
-            </div>
-            <p>Django-powered platform empowering Nigerian artisans with a marketplace, AI learning academy, and community tools.</p>
-            <div class="project-tags">
-              <span>Django</span><span>AI</span><span>Bootstrap</span>
-            </div>
-            <div class="project-actions">
-                <a href="https://kiriong.onrender.com" target="_blank" class="btn-sm live-btn"><i class="fas fa-external-link-alt"></i> Live App</a>
-                <a href="https://github.com/Nwokike/kiriong" target="_blank" class="btn-sm repo-btn"><i class="fab fa-github"></i> Code</a>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-header">
-                <h3>Akili</h3>
-                <span class="status-dot live" title="Live"></span>
-            </div>
-            <p>Django-based learning platform with courses, quizzes, exams, KaTeX for math formulas, and PWA support.</p>
-            <div class="project-tags">
-              <span>Django</span><span>KaTeX</span><span>PWA</span>
-            </div>
-            <div class="project-actions">
-                <a href="https://akili-jwe7.onrender.com" target="_blank" class="btn-sm live-btn"><i class="fas fa-external-link-alt"></i> Live App</a>
-                <a href="https://github.com/Nwokike/Akili" target="_blank" class="btn-sm repo-btn"><i class="fab fa-github"></i> Code</a>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-header">
-                <h3>NewsCheck AI</h3>
-                <span class="status-dot live" title="Live"></span>
-            </div>
-            <p>Modular NLP project using multiple AI models to evaluate credibility, sentiment, and bias in news content.</p>
-            <div class="project-tags">
-              <span>NLP</span><span>Streamlit</span><span>Python</span>
-            </div>
-            <div class="project-actions">
-                <a href="https://newscheck-ai.streamlit.app/" target="_blank" class="btn-sm live-btn"><i class="fas fa-external-link-alt"></i> Live App</a>
-                <a href="https://github.com/Nwokike/newscheck-ai" target="_blank" class="btn-sm repo-btn"><i class="fab fa-github"></i> Code</a>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-header">
-                <h3>Asase</h3>
-                <span class="status-dot live" title="Live"></span>
-            </div>
-            <p>AI-powered environmental intelligence platform for Africa providing real-time analysis of flood risk, air quality, and land health.</p>
-            <div class="project-tags">
-              <span>Django</span><span>OpenWeather</span><span>Gemini</span>
-            </div>
-            <div class="project-actions">
-                <a href="https://asase-app.onrender.com/" target="_blank" class="btn-sm live-btn"><i class="fas fa-external-link-alt"></i> Live App</a>
-                <a href="https://github.com/Nwokike/asase" target="_blank" class="btn-sm repo-btn"><i class="fab fa-github"></i> Code</a>
-            </div>
-          </article>
-          
-           <article class="project-card">
-            <div class="project-header">
-                <h3>Harmful Speech</h3>
-                <span class="status-dot live" title="Live"></span>
-            </div>
-            <p>Multi-class AI classifier detecting topics of harmful online speech in Nigeria. Built with Scikit-learn.</p>
-            <div class="project-tags">
-              <span>Scikit-learn</span><span>Streamlit</span>
-            </div>
-            <div class="project-actions">
-                <a href="https://nigerian-hate-speech-analyzer.streamlit.app/" target="_blank" class="btn-sm live-btn"><i class="fas fa-external-link-alt"></i> Live App</a>
-                <a href="https://github.com/Nwokike/nigerian-hate-speech-analyzer" target="_blank" class="btn-sm repo-btn"><i class="fab fa-github"></i> Code</a>
-            </div>
-          </article>
-
-           <article class="project-card">
-            <div class="project-header">
-                <h3>YieldWise AI</h3>
-                <span class="status-dot live" title="Live"></span>
-            </div>
-            <p>AI platform for African farmers providing farm planning, crop disease diagnosis, and business insights.</p>
-            <div class="project-tags">
-              <span>Flask</span><span>LangChain</span><span>Llama 3.1</span>
-            </div>
-            <div class="project-actions">
-                <a href="https://yieldwise-ai.onrender.com/" target="_blank" class="btn-sm live-btn"><i class="fas fa-external-link-alt"></i> Live App</a>
-                <a href="https://github.com/Nwokike/yieldwise-ai" target="_blank" class="btn-sm repo-btn"><i class="fab fa-github"></i> Code</a>
-            </div>
-          </article>
-          
-           <article class="project-card">
-            <div class="project-header">
-                <h3>Zelcry</h3>
-                <span class="status-dot live" title="Live"></span>
-            </div>
-            <p>AI-powered cryptocurrency investment platform providing real-time market insights and sustainable investing tools.</p>
-            <div class="project-tags">
-              <span>Django</span><span>CoinGecko API</span>
-            </div>
-            <div class="project-actions">
-                <a href="https://zelcry.onrender.com/" target="_blank" class="btn-sm live-btn"><i class="fas fa-external-link-alt"></i> Live App</a>
-                <a href="https://github.com/Nwokike/zelcry" target="_blank" class="btn-sm repo-btn"><i class="fab fa-github"></i> Code</a>
-            </div>
-          </article>
+    <!-- STATS -->
+    <section class="stats">
+      <div class="container stats-grid">
+        <div class="stat">
+          <div class="stat-num">4</div>
+          <div class="stat-label">Mobile apps on Google Play</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Packages published on PyPI</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">8</div>
+          <div class="stat-label">Datasets on Hugging Face</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">5,000+</div>
+          <div class="stat-label">Monthly users on Igbo Archives</div>
         </div>
       </div>
     </section>
 
+    <!-- WORK -->
+    <section class="section" id="work">
+      <div class="container">
+        <h2 class="section-head">Selected Work</h2>
+        <ol class="work-list">
+
+          <li class="work-item">
+            <a class="work-link" href="https://github.com/Nwokike/igbo-archives-platform" target="_blank">
+              <div class="work-meta">
+                <span class="work-num">01</span>
+                <span class="work-title">Igbo Archives</span>
+              </div>
+              <div class="work-info">
+                <span class="work-desc">Cultural preservation PWA · Django 6, HTMX, MCP server · 5,000+ monthly users</span>
+                <span class="work-arrow"><i class="fas fa-arrow-right"></i></span>
+              </div>
+            </a>
+          </li>
+
+          <li class="work-item">
+            <a class="work-link" href="https://github.com/Nwokike/Archives-Agent" target="_blank">
+              <div class="work-meta">
+                <span class="work-num">02</span>
+                <span class="work-title">Igbo Archives Agent</span>
+              </div>
+              <div class="work-info">
+                <span class="work-desc">Multimodal agent pipeline · Google ADK, Gemma 4, vision + audio analysis</span>
+                <span class="work-arrow"><i class="fas fa-arrow-right"></i></span>
+              </div>
+            </a>
+          </li>
+
+          <li class="work-item">
+            <a class="work-link" href="https://play.google.com/store/apps/details?id=com.spaninsight.app" target="_blank">
+              <div class="work-meta">
+                <span class="work-num">03</span>
+                <span class="work-title">SpanInsight</span>
+                <span class="badge-store">Play Store</span>
+              </div>
+              <div class="work-info">
+                <span class="work-desc">Privacy-first data analysis app · Flet, local sandboxed Python runtime</span>
+                <span class="work-arrow"><i class="fas fa-arrow-right"></i></span>
+              </div>
+            </a>
+          </li>
+
+          <li class="work-item">
+            <a class="work-link" href="https://play.google.com/store/apps/details?id=ng.kiri.akili" target="_blank">
+              <div class="work-meta">
+                <span class="work-num">04</span>
+                <span class="work-title">Akili</span>
+                <span class="badge-store">Play Store</span>
+              </div>
+              <div class="work-info">
+                <span class="work-desc">After-school learning app · Flet, AI courses, quizzes, voice + image tutor</span>
+                <span class="work-arrow"><i class="fas fa-arrow-right"></i></span>
+              </div>
+            </a>
+          </li>
+
+          <li class="work-item">
+            <a class="work-link" href="https://play.google.com/store/apps/details?id=ng.kiri.sherlock" target="_blank">
+              <div class="work-meta">
+                <span class="work-num">05</span>
+                <span class="work-title">Sherlock</span>
+                <span class="badge-store">Play Store</span>
+              </div>
+              <div class="work-info">
+                <span class="work-desc">OSINT app · Flet, scans 430+ social networks, ~1.5s on popular platforms</span>
+                <span class="work-arrow"><i class="fas fa-arrow-right"></i></span>
+              </div>
+            </a>
+          </li>
+
+          <li class="work-item">
+            <a class="work-link" href="https://github.com/Nwokike/ADKbot" target="_blank">
+              <div class="work-meta">
+                <span class="work-num">06</span>
+                <span class="work-title">ADKbot</span>
+                <span class="badge-store">PyPI</span>
+              </div>
+              <div class="work-info">
+                <span class="work-desc">Multi-model assistant framework · Google ADK, LiteLLM, 50+ LLM providers</span>
+                <span class="work-arrow"><i class="fas fa-arrow-right"></i></span>
+              </div>
+            </a>
+          </li>
+
+          <li class="work-item">
+            <a class="work-link" href="https://github.com/Nwokike/flet-mcp-server" target="_blank">
+              <div class="work-meta">
+                <span class="work-num">07</span>
+                <span class="work-title">Flet MCP Server</span>
+                <span class="badge-store">PyPI</span>
+              </div>
+              <div class="work-info">
+                <span class="work-desc">MCP server for AI agents · serves Flet docs, controls, ecosystem packages</span>
+                <span class="work-arrow"><i class="fas fa-arrow-right"></i></span>
+              </div>
+            </a>
+          </li>
+
+          <li class="work-item">
+            <a class="work-link" href="https://github.com/Nwokike/kiri-code" target="_blank">
+              <div class="work-meta">
+                <span class="work-num">08</span>
+                <span class="work-title">Kiri Code</span>
+              </div>
+              <div class="work-info">
+                <span class="work-desc">Browser-based coding IDE · WebContainers, Pyodide, isomorphic-git</span>
+                <span class="work-arrow"><i class="fas fa-arrow-right"></i></span>
+              </div>
+            </a>
+          </li>
+
+        </ol>
+        <a class="see-all" href="https://github.com/Nwokike?tab=repositories" target="_blank">View all 24 repositories on GitHub <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </section>
+
+    <!-- RESEARCH -->
     <section class="section" id="research">
       <div class="container">
-        <h2 class="section-title">Research & NLP Contributions</h2>
-        <div class="research-grid">
-            <div class="research-card">
-                <div class="res-icon"><i class="fas fa-comments"></i></div>
-                <div>
-                    <h3>Igbo Bilingual Chat</h3>
-                    <p>Fine-tuned Phi-3-mini to understand, translate, and converse in Igbo while retaining English capabilities.</p>
-                    <a href="https://huggingface.co/nwokikeonyeka/Igbo-Phi3-Bilingual-Chat-v1-merged" target="_blank" class="text-link">View Model &rarr;</a>
-                </div>
-            </div>
-            <div class="research-card">
-                <div class="res-icon"><i class="fas fa-language"></i></div>
-                <div>
-                    <h3>Igbo Translator</h3>
-                    <p>Specialized English-to-Igbo translator fine-tuned from Microsoft's Phi-3-mini.</p>
-                    <a href="https://huggingface.co/nwokikeonyeka/igbo-phi3-translator" target="_blank" class="text-link">View Model &rarr;</a>
-                </div>
-            </div>
-             <div class="research-card">
-                <div class="res-icon"><i class="fas fa-robot"></i></div>
-                <div>
-                    <h3>Igbo Archives Scrapers</h3>
-                    <p>Modular scraper engine for collecting museum and blog data for the Hugging Face dataset.</p>
-                    <a href="https://github.com/Nwokike/igbo-archives-scrapers" target="_blank" class="text-link">View Scrapers &rarr;</a>
-                </div>
-            </div>
+        <h2 class="section-head">AI/ML Research &amp; Model Training</h2>
+        <ol class="work-list">
+
+          <li class="work-item">
+            <a class="work-link" href="https://huggingface.co/KiriLabs/Naija-Moonshine-v1-Base" target="_blank">
+              <div class="work-meta">
+                <span class="work-num">01</span>
+                <span class="work-title">Naija-Moonshine-v1-Base</span>
+              </div>
+              <div class="work-info">
+                <span class="work-desc">Built 0.1B speech model from scratch · custom Naija tokenizer, Pidgin linguistics</span>
+                <span class="work-arrow"><i class="fas fa-arrow-right"></i></span>
+              </div>
+            </a>
+          </li>
+
+          <li class="work-item">
+            <a class="work-link" href="https://huggingface.co/nwokikeonyeka" target="_blank">
+              <div class="work-meta">
+                <span class="work-num">02</span>
+                <span class="work-title">Igbo Cultural Heritage Datasets</span>
+              </div>
+              <div class="work-info">
+                <span class="work-desc">8 datasets · Pitt Rivers, British Museum, MAA Cambridge · thousands of downloads/month</span>
+                <span class="work-arrow"><i class="fas fa-arrow-right"></i></span>
+              </div>
+            </a>
+          </li>
+
+          <li class="work-item">
+            <a class="work-link" href="https://github.com/Nwokike/igbo-bilingual-chat" target="_blank">
+              <div class="work-meta">
+                <span class="work-num">03</span>
+                <span class="work-title">Igbo Bilingual Chat</span>
+              </div>
+              <div class="work-info">
+                <span class="work-desc">Fine-tuned Phi-3-mini · 700,000 examples, 44,500 steps, ~20 hours</span>
+                <span class="work-arrow"><i class="fas fa-arrow-right"></i></span>
+              </div>
+            </a>
+          </li>
+
+          <li class="work-item">
+            <a class="work-link" href="https://github.com/Nwokike/museum-scrapers-python" target="_blank">
+              <div class="work-meta">
+                <span class="work-num">04</span>
+                <span class="work-title">Museum Scrapers Python</span>
+              </div>
+              <div="work-info">
+                <span class="work-desc">Async scraping toolkit · 5 institutions, Playwright, IIIF max-resolution extraction</span>
+                <span class="work-arrow"><i class="fas fa-arrow-right"></i></span>
+              </div>
+            </a>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div>
+          <h2 class="section-head">About</h2>
+          <p class="about-text">
+            I'm a software engineer and Agricultural &amp; Bioresources Engineer with experience building web and mobile applications, AI agents, APIs, and data tools. I work across Django, Flet, and AI/ML, with a focus on practical, maintainable software for clients in Nigeria and abroad.
+          </p>
+          <p class="about-text">
+            Founder of <a href="https://kiri.ng" target="_blank" class="inline-link">Kiri Research Labs</a>. Based in Enugu, Nigeria.
+          </p>
+        </div>
+        <div class="stack">
+          <h3 class="stack-title">Stack</h3>
+          <ul class="stack-list">
+            <li><span class="stack-key">Language</span> Python</li>
+            <li><span class="stack-key">Mobile &amp; Agents</span> Flet, Google ADK, MCP, Playwright</li>
+            <li><span class="stack-key">Backend</span> Django, REST APIs</li>
+            <li><span class="stack-key">AI/ML</span> Hugging Face, fine-tuning (LoRA/PEFT), Scikit-learn, Pandas, NumPy</li>
+            <li><span class="stack-key">Web</span> HTML5, CSS3, JavaScript, HTMX, Tailwind</li>
+            <li><span class="stack-key">Database</span> PostgreSQL, MySQL, SQLite (WAL)</li>
+            <li><span class="stack-key">Deploy</span> Linux, Google Cloud, Azure, Oracle Cloud, Render, Streamlit</li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <section class="section" id="contact">
-      <div class="container contact-card">
-        <h2>Let's Collaborate</h2>
-        <p>I'm open to discussing new projects, research opportunities, or creative ideas.</p>
-        <a class="btn primary" href="mailto:nwokikeonyeka@gmail.com">Email Me</a>
+    <!-- CONTACT -->
+    <section class="contact">
+      <div class="container">
+        <p class="contact-eyebrow">Let's work together</p>
+        <h2 class="contact-title">
+          <a href="mailto:nwokikeonyeka@gmail.com">nwokikeonyeka@gmail.com</a>
+        </h2>
+        <div class="hero-socials">
+          <a href="https://github.com/Nwokike" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i> GitHub</a>
+          <a href="https://www.linkedin.com/in/onyeka-nwokike" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+          <a href="https://huggingface.co/nwokikeonyeka" target="_blank" aria-label="Hugging Face"><i class="fas fa-face-smile"></i> Hugging Face</a>
+        </div>
       </div>
     </section>
+
   </main>
 
-  <footer>
-    <div class="container">
-      <span>&copy; <span id="year"></span> Onyeka Nwokike. All rights reserved.</span>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Onyeka Nwokike</span>
+      <span class="footer-muted">Enugu, Nigeria · <a href="https://kiri.ng" target="_blank" class="footer-link">Kiri Research Labs</a></span>
     </div>
   </footer>
-  
+
   <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,166 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Services | Onyeka Nwokike</title>
-<meta content="Software development services, from custom web applications to professional websites, with clear and competitive pricing." name="description"/>
-<link href="css/style.css" rel="stylesheet"/>
-<link href="images/FB_IMG.jpg" rel="icon"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services — Onyeka Nwokike</title>
+  <meta name="description" content="Software development services from Onyeka Nwokike — Django web platforms, Flet mobile apps, AI agents, MCP servers, model fine-tuning, and data tools."/>
+
+  <!-- Theme: set BEFORE paint to avoid flash -->
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('theme') || 'system';
+        var sysDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var dark = saved === 'dark' || (saved === 'system' && sysDark);
+        document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="css/style.css" rel="stylesheet"/>
+  <link href="images/FB_IMG.jpg" rel="icon"/>
 </head>
 <body>
-<nav class="navbar">
-<div class="container nav-row">
-  <a href="index.html" class="logo">Onyeka<span class="dot">.</span></a>
-  <div class="nav-actions">
-    <button id="themeToggle" title="Toggle dark mode">
-      <i class="fas fa-moon" id="themeIcon"></i>
-    </button>
-    <button aria-label="Open menu" class="menu-btn" id="menuBtn">
-        <span class="bar"></span>
-        <span class="bar"></span>
-    </button>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Onyeka Nwokike</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#work">Work</a></li>
+        <li><a href="index.html#research">Research</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="mailto:nwokikeonyeka@gmail.com">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-toggle" title="Switch theme" aria-label="Switch theme">
+          <i class="fas fa-sun icon-light" aria-hidden="true"></i>
+          <i class="fas fa-moon icon-dark" aria-hidden="true"></i>
+          <i class="fas fa-desktop icon-system" aria-hidden="true"></i>
+        </button>
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <button aria-label="Close menu" class="close-btn" id="closeMenu">×</button>
+    <ul>
+      <li><a href="index.html#work">Work</a></li>
+      <li><a href="index.html#research">Research</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="mailto:nwokikeonyeka@gmail.com">Contact</a></li>
+    </ul>
   </div>
-  <ul class="nav-links" id="navLinks">
-    <li><a class="nav-link" href="index.html">Home</a></li>
-    <li><a class="nav-link" href="index.html#projects">Projects</a></li>
-    <li><a class="nav-link" href="index.html#contact">Contact</a></li>
-  </ul>
-</div>
-<div class="mobile-menu" id="mobileMenu">
-  <div class="mobile-header">
-      <span class="logo">Onyeka<span class="dot">.</span></span>
-      <button aria-label="Close menu" class="close-btn" id="closeMenu">×</button>
-  </div>
-  <ul>
-    <li><a class="nav-link" href="index.html">Home</a></li>
-    <li><a class="nav-link" href="index.html#projects">Projects</a></li>
-    <li><a class="nav-link" href="index.html#contact">Contact</a></li>
-  </ul>
-</div>
-</nav>
-<main>
-<section class="hero">
-<div class="container hero-grid">
-<div class="hero-text">
-<h1>Software Development Services</h1>
-<p class="desc">
-            I offer practical solutions designed to meet your specific goals. The prices below are starting points and can be adjusted based on the full scope and complexity of your project.
-          </p>
-</div>
-</div>
-</section>
-<section class="section">
-<div class="container">
-<div class="services-grid-detailed">
-<div class="service-card">
-<h3>Custom Web Application</h3>
-<p>Build a powerful tool from scratch to automate operations, manage data, or serve your users more effectively.</p>
-<div class="service-details">
-<strong>What's Included:</strong>
-<ul>
-<li>Full-stack development (backend &amp; frontend)</li>
-<li>Database architecture (PostgreSQL, MySQL)</li>
-<li>Secure user authentication</li>
-<li>Deployment to cloud (Render, Oracle Cloud)</li>
-<li>AI integration (Gemini, LangChain, Groq, OpenAI, etc)</li>
-</ul>
-<strong>Ideal For:</strong> Startups, SMEs, and innovators needing custom software.
-</div>
-<div class="price">
-<strong>Starting at $250</strong>
-</div>
-<a class="btn small full-width" href="mailto:nwokikeonyeka@gmail.com">Discuss Your Application</a>
-</div>
-<div class="service-card">
-<h3>Professional Website</h3>
-<p>Establish a credible and impressive online presence with a fast, modern, and mobile-friendly website.</p>
-<div class="service-details">
-<strong>What's Included:</strong>
-<ul>
-<li>Custom responsive design (HTML5, CSS3, JS)</li>
-<li>WordPress or static site</li>
-<li>Contact form &amp; social media integration</li>
-<li>Basic on-page SEO setup</li>
-</ul>
-<strong>Ideal For:</strong> Businesses needing a polished digital front door.
-</div>
-<div class="price">
-<strong>Starting at $150</strong>
-</div>
-<a class="btn small full-width" href="mailto:nwokikeonyeka@gmail.com">Build Your Website</a>
-</div>
-<div class="service-card">
-<h3>AI Feature Integration</h3>
-<p>Upgrade your existing project with intelligent capabilities using modern AI APIs for a smarter user experience.</p>
-<div class="service-details">
-<strong>What's Included:</strong>
-<ul>
-<li>Consultation on viable AI features</li>
-<li>Integration with Google Gemini, LangChain, Groq, etc</li>
-<li>Development of chatbots, analytics, etc</li>
-<li>Task automation scripts</li>
-</ul>
-<strong>Ideal For:</strong> Platforms ready to embrace AI capabilities and automation.
-</div>
-<div class="price">
-<strong>Starting at $100</strong>
-</div>
-<a class="btn small full-width" href="mailto:nwokikeonyeka@gmail.com">Integrate AI</a>
-</div>
-<div class="service-card">
-<h3>Data Analysis & Visualization Dashboard</h3>
-<p>Transform your raw data into clear, interactive dashboards that reveal trends, risks, and opportunities at a glance.</p>
-<div class="service-details">
-<strong>What's Included:</strong>
-<ul>
-<li>Data collection and cleaning (CSV, APIs, databases)</li>
-<li>Statistical analysis and insight generation</li>
-<li>Interactive charts and visual reports (Matplotlib, Streamlit, Chart.js)</li>
-<li>Web-based dashboard deployment (Streamlit, Flask, etc)</li>
-</ul>
-<strong>Ideal For:</strong> Researchers, businesses, and NGOs that rely on data to drive decisions but lack in-house analytics tools.
-</div>
-<div class="price">
-<strong>Starting at $100</strong>
-</div>
-<a class="btn small full-width" href="mailto:nwokikeonyeka@gmail.com">Visualize Your Data</a>
-</div>
-</div>
-</div>
-</section>
-<section class="section">
-<div class="container">
-<h2 class="section-title">Frequently Asked Questions</h2>
-<div class="faq-container">
-<div class="faq-item">
-<button class="faq-question">What do you need from me to get started?</button>
-<div class="faq-answer">
-<p>The best way to start is by sending me an email with a brief description of your project idea, what you hope to achieve, your timeline, and a rough budget. This gives us a great starting point for our discovery call.</p>
-</div>
-</div>
-<div class="faq-item">
-<button class="faq-question">Do you offer maintenance or support after launch?</button>
-<div class="faq-answer">
-<p>Yes. After project completion, we can discuss an optional monthly retainer for ongoing maintenance, updates, and support to ensure your application remains secure and performs optimally.</p>
-</div>
-</div>
-<div class="faq-item">
-<button class="faq-question">What is your typical project timeline?</button>
-<div class="faq-answer">
-<p>A standard professional website typically takes 2-4 weeks. A custom web application is more variable and can range from 5 weeks to several months depending on its complexity. I will provide a precise timeline in the project proposal.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-</main>
-<footer>
-<div class="container">
-<span>© <span id="year">2025</span> Onyeka Nwokike</span>
-</div>
-</footer>
-<script src="js/script.js"></script>
+
+  <main id="top">
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Services</p>
+        <h1 class="page-title">Software, AI, and data work — built end to end.</h1>
+        <p class="page-lede">
+          I design, build, and ship production systems: Django web platforms, Flet mobile apps, AI agents, MCP integrations, fine-tuned models, and data tools. Each engagement is scoped to your problem and budget.
+        </p>
+      </div>
+    </section>
+
+    <!-- SERVICES GRID -->
+    <section class="section">
+      <div class="container">
+        <div class="services-grid">
+
+          <div class="service-card">
+            <h3>Web Platform (Django)</h3>
+            <p>Full-stack web applications — from idea to deployed product.</p>
+            <div class="service-details">
+              <strong>Includes:</strong>
+              <ul>
+                <li>Django backend + REST API</li>
+                <li>HTMX or templated frontend, Tailwind styling</li>
+                <li>Auth, payments (Paystack), and role-based access</li>
+                <li>PostgreSQL / MySQL / SQLite (WAL)</li>
+                <li>Deployment on Linux, Render, or your cloud</li>
+              </ul>
+              <strong>Ideal for:</strong> Startups, marketplaces, and internal tools.
+            </div>
+            <div class="service-price">Starting at $300</div>
+            <div class="service-cta">
+              <a class="btn-block" href="mailto:nwokikeonyeka@gmail.com?subject=Django%20web%20platform">Discuss your platform</a>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <h3>Mobile App (Flet)</h3>
+            <p>Cross-platform Android (and desktop) apps from a single Python codebase.</p>
+            <div class="service-details">
+              <strong>Includes:</strong>
+              <ul>
+                <li>Flet app with offline-first SQLite (WAL) storage</li>
+                <li>Sandboxed local runtime (pandas, matplotlib)</li>
+                <li>AI gateway integration (multi-model with failover)</li>
+                <li>AdMob monetization + credits system</li>
+                <li>Google Play submission with APK splits</li>
+              </ul>
+              <strong>Ideal for:</strong> Data tools, education, OSINT, and utilities.
+            </div>
+            <div class="service-price">Starting at $350</div>
+            <div class="service-cta">
+              <a class="btn-block" href="mailto:nwokikeonyeka@gmail.com?subject=Flet%20mobile%20app">Discuss your app</a>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <h3>AI Agent Pipeline (Google ADK)</h3>
+            <p>Autonomous agent systems that research, analyze, and act.</p>
+            <div class="service-details">
+              <strong>Includes:</strong>
+              <ul>
+                <li>Sequential / loop agent orchestration on Google ADK</li>
+                <li>Writer–critic refinement loops</li>
+                <li>Vision, audio, and text multimodal analysis</li>
+                <li>Web research (DuckDuckGo, search APIs)</li>
+                <li>MCP client integration to your data sources</li>
+              </ul>
+              <strong>Ideal for:</strong> Automating research, ingestion, and reporting.
+            </div>
+            <div class="service-price">Starting at $400</div>
+            <div class="service-cta">
+              <a class="btn-block" href="mailto:nwokikeonyeka@gmail.com?subject=AI%20agent%20pipeline">Discuss your agent</a>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <h3>MCP Server or Integration</h3>
+            <p>Make your product's data available to AI agents and tools.</p>
+            <div class="service-details">
+              <strong>Includes:</strong>
+              <ul>
+                <li>Custom MCP server (Python, published to PyPI if needed)</li>
+                <li>GitHub Tree sync, diskcache, fuzzy search</li>
+                <li>MCP client wiring into existing pipelines</li>
+                <li>Client configs for Cursor, Claude, VSCode, Zed</li>
+              </ul>
+              <strong>Ideal for:</strong> Docs platforms, APIs, and internal knowledge bases.
+            </div>
+            <div class="service-price">Starting at $200</div>
+            <div class="service-cta">
+              <a class="btn-block" href="mailto:nwokikeonyeka@gmail.com?subject=MCP%20server">Discuss your MCP build</a>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <h3>Model Fine-Tuning</h3>
+            <p>Fine-tune open models for your domain or language.</p>
+            <div class="service-details">
+              <strong>Includes:</strong>
+              <ul>
+                <li>LoRA / PEFT fine-tuning (Phi-3, Llama, Gemma, etc.)</li>
+                <li>Dataset prep, formatting, and cleaning</li>
+                <li>Checkpoint-resume strategy for long training runs</li>
+                <li>GGUF export + publish to Hugging Face</li>
+                <li>Inference scripts (llama.cpp, Ollama)</li>
+              </ul>
+              <strong>Ideal for:</strong> Niche domains, languages, and specialist tasks.
+            </div>
+            <div class="service-price">Starting at $300</div>
+            <div class="service-cta">
+              <a class="btn-block" href="mailto:nwokikeonyeka@gmail.com?subject=Model%20fine-tuning">Discuss fine-tuning</a>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <h3>Data Tools &amp; Dashboards</h3>
+            <p>Collect, analyze, and visualize data — privacy-first if you need it.</p>
+            <div class="service-details">
+              <strong>Includes:</strong>
+              <ul>
+                <li>Data ingestion (CSV, Excel, SQL, JSON, APIs)</li>
+                <li>Pandas / NumPy analysis pipelines</li>
+                <li>Interactive charts and reports</li>
+                <li>Survey/form generation + live responses</li>
+                <li>Export to PDF / PowerPoint</li>
+              </ul>
+              <strong>Ideal for:</strong> Researchers, NGOs, and businesses.
+            </div>
+            <div class="service-price">Starting at $150</div>
+            <div class="service-cta">
+              <a class="btn-block" href="mailto:nwokikeonyeka@gmail.com?subject=Data%20tools">Discuss your data project</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-head">Frequently Asked Questions</h2>
+        <div class="faq-list">
+
+          <div class="faq-item">
+            <button class="faq-question">
+              How do we start?
+              <span class="faq-toggle">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Email me with a short description of your project, your goal, your timeline, and a rough budget. From there I'll send a scope and proposal.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              Do you offer maintenance after launch?
+              <span class="faq-toggle">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes. After launch we can arrange a monthly retainer for updates, monitoring, and support to keep things secure and fast.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              What's a typical timeline?
+              <span class="faq-toggle">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>A data tool or MCP server is often 1–2 weeks. A Django platform or Flet app usually runs 3–8 weeks depending on scope. AI agent pipelines and fine-tuning vary most — I'll give a precise estimate up front.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              Can you work with my existing codebase?
+              <span class="faq-toggle">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes. I'm comfortable onboarding into existing Django, Flet, or Python projects — adding features, refactoring, or integrating AI without a full rewrite.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              Do you publish to PyPI or Google Play?
+              <span class="faq-toggle">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>If you want it. I can package a tool for PyPI, submit a Flet app to Google Play (with APK architecture splits), or publish models and datasets to Hugging Face under your account.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact">
+      <div class="container">
+        <p class="contact-eyebrow">Have a project in mind?</p>
+        <h2 class="contact-title">
+          <a href="mailto:nwokikeonyeka@gmail.com">nwokikeonyeka@gmail.com</a>
+        </h2>
+        <div class="hero-socials">
+          <a href="https://github.com/Nwokike" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i> GitHub</a>
+          <a href="https://www.linkedin.com/in/onyeka-nwokike" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+          <a href="https://huggingface.co/nwokikeonyeka" target="_blank" aria-label="Hugging Face"><i class="fas fa-face-smile"></i> Hugging Face</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Onyeka Nwokike</span>
+      <span class="footer-muted">Enugu, Nigeria · <a href="https://kiri.ng" target="_blank" class="footer-link">Kiri Research Labs</a></span>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script>
+    // FAQ accordion
+    document.querySelectorAll('.faq-question').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var item = btn.closest('.faq-item');
+        var isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(function (i) { i.classList.remove('open'); });
+        if (!isOpen) item.classList.add('open');
+      });
+    });
+  </script>
 </body>
 </html>
