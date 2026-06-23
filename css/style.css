@@ -148,6 +148,7 @@ button { font: inherit; cursor: pointer; background: none; border: none; color: 
   padding: 12px 22px; font-size: 14px; font-weight: 500;
   border-radius: var(--radius-sm); transition: all 0.15s ease;
   border: 1px solid transparent;
+  white-space: nowrap;
 }
 .btn-primary { background: var(--accent); color: var(--accent-contrast); }
 .btn-primary:hover { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(0,0,0,0.12); }
@@ -221,7 +222,7 @@ button { font: inherit; cursor: pointer; background: none; border: none; color: 
 .see-all:hover i { transform: translateX(3px); }
 
 /* ABOUT */
-.about-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 56px; align-items: start; }
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; }
 .about-text { font-size: 17px; color: var(--text-muted); margin-bottom: 18px; line-height: 1.65; }
 .inline-link { color: var(--text); font-weight: 500; border-bottom: 1px solid var(--border-strong); }
 .inline-link:hover { border-bottom-color: var(--text); }
@@ -239,6 +240,19 @@ button { font: inherit; cursor: pointer; background: none; border: none; color: 
 .stack-key {
   font-size: 11px; color: var(--text-faint); font-weight: 600;
   text-transform: uppercase; letter-spacing: 0.06em;
+}
+
+/* ABOUT PHOTO */
+.about-photo {
+  width: 140px; height: 140px; object-fit: cover;
+  border-radius: 16px; margin-bottom: 28px;
+  border: 1px solid var(--border);
+  filter: grayscale(15%);
+  transition: filter 0.25s ease, transform 0.25s ease;
+}
+.about-photo:hover { filter: grayscale(0%); transform: scale(1.02); }
+@media (max-width: 768px) {
+  .about-photo { width: 120px; height: 120px; border-radius: 14px; }
 }
 
 /* CONTACT */
@@ -334,7 +348,11 @@ button { font: inherit; cursor: pointer; background: none; border: none; color: 
   .menu-btn { display: inline-flex; }
   .hero { padding: 64px 0 56px; }
   .hero-lede { font-size: 16px; }
-  .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 28px 16px; }
+  /* Hero buttons: fit on one line on mobile */
+  .hero-actions { gap: 8px; }
+  .hero-actions .btn { padding: 9px 14px; font-size: 13px; }
+  /* Stats: inner breathing room from screen edge */
+  .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 28px 16px; padding: 28px 8px; }
   .section { padding: 56px 0; }
   .work-link { flex-direction: column; align-items: flex-start; gap: 8px; }
   .work-info { text-align: left; justify-content: space-between; width: 100%; }
@@ -345,4 +363,9 @@ button { font: inherit; cursor: pointer; background: none; border: none; color: 
 @media (max-width: 480px) {
   .hero-title { font-size: 30px; }
   .stat-num { font-size: 24px; }
+  /* Even tighter on small phones so 3 buttons fit */
+  .hero-actions .btn { padding: 8px 11px; font-size: 12px; }
+}
+@media (max-width: 360px) {
+  .hero-actions { flex-wrap: nowrap; overflow-x: auto; }
 }
