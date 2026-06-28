@@ -242,18 +242,14 @@ button { font: inherit; cursor: pointer; background: none; border: none; color: 
   text-transform: uppercase; letter-spacing: 0.06em;
 }
 
-/* ABOUT PHOTO */
 .about-photo {
   width: 140px; height: 140px; object-fit: cover;
-  border-radius: 16px; margin-bottom: 28px;
+  border-radius: 16px; margin-top: 24px; margin-bottom: 24px;
   border: 1px solid var(--border);
   filter: grayscale(15%);
   transition: filter 0.25s ease, transform 0.25s ease;
 }
 .about-photo:hover { filter: grayscale(0%); transform: scale(1.02); }
-@media (max-width: 768px) {
-  .about-photo { width: 120px; height: 120px; border-radius: 14px; }
-}
 
 /* CONTACT */
 .contact { padding: 96px 0; border-top: 1px solid var(--border); text-align: center; }
