@@ -1,0 +1,137 @@
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[margin=0.55in]{geometry}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{link}{HTML}{1F4E79}
+\hypersetup{colorlinks=true, linkcolor=link, urlcolor=link, citecolor=link}
+
+\pagestyle{plain}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+\titleformat{\section}{\normalfont\bfseries\large}{}{0em}{}[\vspace{-0.55em}\rule{\textwidth}{0.4pt}]
+\titlespacing*{\section}{0pt}{6pt}{2pt}
+
+\setlist[itemize]{leftmargin=1.05em, itemsep=0.4pt, topsep=0.3pt, parsep=0pt, partopsep=0pt}
+
+\newcommand{\sep}{\ \textperiodcentered\ }
+\newcommand{\proj}[2]{\item \textbf{#1}: #2}
+\newcommand{\role}[3]{\par\vspace{3pt}\textbf{#1}\\ \textit{#2}\hfill\textit{#3}\par}
+\newcommand{\subhead}[1]{\par\vspace{4pt}\noindent\textbf{\textsc{#1}}\par\vspace{1pt}}
+
+\begin{document}
+
+\begin{center}
+{\LARGE\bfseries Onyeka Nwokike}\\[2pt]
+{\large Software Engineer (AI/Data) \sep Agricultural \& Bioresources Engineer}\\[4pt]
+{\small Enugu, Nigeria \sep +234 906 907 1922 \sep \href{mailto:nwokikeonyeka@gmail.com}{nwokikeonyeka@gmail.com}}\\[2pt]
+{\small \href{https://nwokike.github.io}{nwokike.github.io} \sep \href{https://github.com/Nwokike}{GitHub} \sep \href{https://www.linkedin.com/in/onyeka-nwokike}{LinkedIn} \sep \href{https://huggingface.co/nwokikeonyeka}{Hugging Face}}
+\end{center}
+
+\section*{Professional Summary}
+Agricultural and Bioresources Engineer and Software Engineer specializing in Python, Django, Flet, AI/ML and data systems. I build cross-platform apps for Android, Windows and Linux, plus autonomous agents, APIs and developer tools, shipped to Google Play, PyPI and Hugging Face for clients in Nigeria and internationally.
+
+\section*{Technical \& Digital Experience}
+
+\subhead{Featured Projects}
+\begin{itemize}
+\proj{Igbo Archives}{Cultural preservation PWA built with Django 6, HTMX and SQLite WAL. Multi-format archives, community lore, book reviews, an AI assistant, a public REST API and an MCP server. Reaches 5,000+ monthly organic users.}
+\proj{Igbo Archives Agent}{Multimodal agent pipeline on Google ADK and Gemma 4. Ingests historical metadata from Hugging Face, runs vision and audio analysis, and publishes validated entries to the Igbo Archives via an MCP client.}
+\proj{FFmpeg AV}{On-device media studio built with PyAV and Flet. Transcodes, cuts, joins, extracts and masters audio and video on Android, Windows and Linux. Codecs and filters are probed from the installed FFmpeg build. Launching on Google Play.}
+\proj{Proot Distro X11}{Linux on Android without root, built with Flet, proot, Xvnc, noVNC and QEMU. Runs Debian, Ubuntu, Alpine or any Docker image with a real X11 desktop, audio and a PTY terminal. Launching on Google Play.}
+\proj{Colab Shell}{Cross-platform client for Google Colab built with Flet 1.1. Notebooks, interactive PTY terminals, CPU, GPU and TPU runtimes, file transfer and an in-app AI assistant. Runs on Android, Windows and Linux. Published on Google Play.}
+\proj{Asase}{Global earth-intelligence platform for seismic, space weather, wildfire, flood, air-quality and marine telemetry from USGS, NOAA, NASA, Copernicus and Open-Meteo. Live on the web; launching on Google Play.}
+\proj{Akili}{AI learning app built with Flet. Generates curricula, lessons, quizzes and mock exams, with a tutor that accepts voice and image input. Published on Google Play.}
+\proj{Sherlock}{Dual-mode OSINT app built with Flet. Scans 5,200+ username networks and 180+ email platforms, then exports PDF, XMind, CSV and JSON dossiers on Android, Windows and Linux. Published on Google Play.}
+\proj{DDGS}{Private metasearch app built with Flet. Searches 9 engines, downloads video and images, extracts pages as Markdown or text, and includes an AI assistant on Android, Windows and Linux. Published on Google Play.}
+\proj{Flet MCP Server}{Model Context Protocol server published on PyPI. Reads the installed Flet source and verifies AI-written Flet code with line-numbered diagnostics. Exposes 16 tools, 3 prompts and 2 resources.}
+\end{itemize}
+
+\subhead{AI/ML Research \& Model Training}
+\begin{itemize}
+\proj{Naija-Moonshine-v1-Base}{Built and patched a 0.1B parameter Moonshine speech model from scratch with a custom Naija tokenizer for low-resource ASR, incorporating digraphs and Pidgin-specific linguistics. Research prototype; insights applied to future edge AI systems.}
+\proj{Igbo Cultural Heritage Datasets}{Published 9 structured datasets on Hugging Face (Pitt Rivers Igbo, British Museum Igbo, MAA Cambridge, G.I. Jones, Re-entanglements, Ukpuru) for Digital Humanities research. Averaging thousands of downloads per month, with peaks of 5,000+.}
+\proj{Igbo Bilingual Chat}{Fine-tuned Phi-3-mini into a bilingual Igbo/English conversational model on 700,000 examples across 44,500 training steps (about 20 hours). Published GGUF and merged weights on Hugging Face.}
+\proj{Igbo Translator}{Fine-tuned Phi-3-mini into an English-to-Igbo specialist translator, exported to GGUF.}
+\proj{Museum Scrapers Python}{Async scraping toolkit for Digital Humanities research, covering 5 institutions (Pitt Rivers, British Museum, MAA Cambridge, G.I. Jones, Ukpuru). Playwright, IIIF max-resolution extraction and structured JSONL output.}
+\end{itemize}
+
+\newpage
+\section*{Professional Experience}
+
+\role{National Agricultural Seeds Council, Sheda, Kwali, FCT}{NYSC Intern, Seed Coordination Department}{January 2025 -- December 2025}
+\begin{itemize}
+\item Streamlined seed production processes, reducing distribution delays by 15\% while enforcing Nigeria's quality standards.
+\item Collaborated on nationwide initiatives to promote sustainable farming practices and seed quality standards.
+\end{itemize}
+
+\role{GreenEarth Environmental Consult, Enugu}{SIWES Intern, Environmental Engineering}{January 2022 -- June 2022}
+\begin{itemize}
+\item Conducted field sampling for 5+ Environmental Impact Assessments (EIAs), securing approval for sustainable projects.
+\item Developed 3 Environmental Management Plans (EMPs), achieving 100\% compliance with environmental regulations.
+\item Presented risk mitigation strategies to stakeholders, gaining approval for 2 major infrastructure projects.
+\end{itemize}
+
+\role{Self-Employed}{Software Developer \& SEO Specialist}{March 2020 -- Present}
+\begin{itemize}
+\item Delivered AI-powered platforms and data tools for clients, improving outcomes by 30\% through optimized code.
+\item Grew client project visibility by 50--200\% using advanced SEO and technical optimizations.
+\end{itemize}
+
+\role{Kiri Research Labs}{Founder \& Lead Developer}{March 2024 -- Present}
+\begin{itemize}
+\item Founded and lead technical development of the Igbo Archives, a cultural preservation platform reaching 5,000+ monthly organic users through SEO.
+\item Built the Django backend, REST API and MCP server that let AI agents read and contribute to the archive.
+\item Ship cross-platform products to Android, Windows, Linux and the web, including FFmpeg AV, Proot Distro X11, Colab Shell and Asase.
+\end{itemize}
+
+\section*{Skills}
+
+\subhead{Tech Stack}
+\begin{itemize}
+\item \textbf{Primary Language:} Python
+\item \textbf{Languages:} TypeScript, JavaScript, Rust, SQL, Bash
+\item \textbf{Mobile \& Agents:} Flet, Google ADK, LiteLLM, MCP, Playwright
+\item \textbf{Backend:} Django, FastAPI, DRF, Cloudflare Workers, REST APIs
+\item \textbf{AI/ML:} Hugging Face, fine-tuning (LoRA/PEFT), PyTorch, Scikit-learn, Pandas, NumPy
+\item \textbf{Media \& Systems:} PyAV/FFmpeg, proot, X11/Xvnc, noVNC, QEMU
+\item \textbf{Web:} HTML5, CSS3, JavaScript, HTMX, Tailwind
+\item \textbf{Database:} PostgreSQL, MySQL, SQLite (WAL)
+\item \textbf{Deployment:} Linux, Google Cloud, Azure, Oracle Cloud, Render, Cloudflare, GitHub Actions
+\end{itemize}
+
+\subhead{Core Engineering \& Agricultural}
+\begin{itemize}
+\item Environmental Impact Assessment, Environmental Management Plans, Sustainable Agriculture
+\end{itemize}
+
+\subhead{Soft Skills}
+\begin{itemize}
+\item Communication, Analytical Thinking, Team Collaboration, Research
+\end{itemize}
+
+\section*{Certifications}
+\begin{itemize}
+\item AI Software Engineer (Power Learn Project Africa, 2025)
+\item PCAP: Programming Essentials in Python (Cisco Networking Academy \& OpenEDG, July 2019)
+\item B.Eng Certificate (University of Nigeria, Nsukka)
+\item ASABE Membership
+\item FA Equality and Diversity Certificate
+\item Trade Test I, II, and III (Electrical Installation and Maintenance)
+\end{itemize}
+
+\section*{Education}
+
+\role{University of Nigeria, Nsukka}{B.Eng in Agricultural and Bioresources Engineering, Second Class (CGPA: 3.00/5.00)}{2017 -- 2023}
+
+\role{Power Learn Project (PLP Africa) Software Engineering Program}{AI for Software Engineering}{2025}
+
+\end{document}

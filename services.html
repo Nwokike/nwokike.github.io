@@ -1,329 +1,358 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Services — Onyeka Nwokike</title>
-  <meta name="description" content="Software development services from Onyeka Nwokike — web platforms, mobile apps, AI agents, MCP servers, model fine-tuning, and data tools."/>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Services | Onyeka Nwokike</title>
+  <meta name="description" content="Software development services from Onyeka Nwokike: web platforms, cross-platform apps, AI agents, MCP servers, model fine-tuning, code audits and data tools.">
+  <link rel="canonical" href="https://nwokike.github.io/services.html">
   <script>
     (function () {
       try {
         var saved = localStorage.getItem('theme') || 'system';
-        var sysDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        var dark = saved === 'dark' || (saved === 'system' && sysDark);
-        document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
-      } catch (e) {
-        document.documentElement.setAttribute('data-theme', 'light');
-      }
+        if (saved === 'light' || saved === 'dark') {
+          document.documentElement.setAttribute('data-theme', saved);
+        }
+      } catch (e) {}
     })();
   </script>
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link href="css/style.css" rel="stylesheet"/>
-  <link href="images/FB_IMG.jpg" rel="icon"/>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Services | Onyeka Nwokike">
+  <meta property="og:description" content="Web platforms, cross-platform apps, AI agents, MCP servers, fine-tuning and data tools.">
+  <meta property="og:url" content="https://nwokike.github.io/services.html">
+  <meta property="og:image" content="https://nwokike.github.io/images/og.png">
+  <meta name="theme-color" content="#faf9f6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b0b0a" media="(prefers-color-scheme: dark)">
 </head>
 <body>
-  <nav class="nav">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <svg aria-hidden="true" focusable="false" width="0" height="0" style="position:absolute">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-ext" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.5 2.87 8.32 6.84 9.67.5.09.68-.22.68-.49 0-.24-.01-.87-.01-1.7-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05a9.4 9.4 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.59.69.49A10.02 10.02 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3zM10 9h3.8v1.64h.05c.53-.95 1.83-1.95 3.76-1.95C21.4 8.69 22 11.1 22 14.2V21h-4v-6.03c0-1.44-.03-3.29-2.1-3.29-2.1 0-2.42 1.56-2.42 3.18V21h-3.98z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 7 8.5 6 8.5-6"/></symbol>
+    <symbol id="i-smile" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8.3 14.4a4.6 4.6 0 0 0 7.4 0"/><circle cx="9" cy="9.8" r=".7" fill="currentColor" stroke="none"/><circle cx="15" cy="9.8" r=".7" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-box" viewBox="0 0 24 24"><path d="m21 8-9-5-9 5v8l9 5 9-5z"/><path d="m3 8 9 5 9-5M12 13v8"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></symbol>
+    <symbol id="i-desktop" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="1.5"/><path d="M9 20h6M12 16v4"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+  </svg>
+
+  <header class="nav" id="top">
     <div class="nav-inner">
-      <a href="index.html" class="nav-logo">Onyeka Nwokike</a>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="index.html#work">Work</a></li>
-        <li><a href="index.html#research">Research</a></li>
-        <li><a href="index.html#about">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="mailto:nwokikeonyeka@gmail.com">Contact</a></li>
-      </ul>
+      <a class="brand" href="index.html" aria-label="Onyeka Nwokike, home">
+        <span class="brand-mark" aria-hidden="true">ON</span>
+        <span>Onyeka Nwokike</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html#work">Work</a>
+        <a href="index.html#research">Research</a>
+        <a href="index.html#about">About</a>
+        <a href="services.html" aria-current="true">Services</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
       <div class="nav-actions">
-        <button id="themeToggle" class="theme-toggle" title="Switch theme" aria-label="Switch theme">
-          <i class="fas fa-sun icon-light" aria-hidden="true"></i>
-          <i class="fas fa-moon icon-dark" aria-hidden="true"></i>
-          <i class="fas fa-desktop icon-system" aria-hidden="true"></i>
+        <button class="icon-btn theme-toggle" id="themeToggle" aria-label="Switch theme: system">
+          <svg class="i icon-light" aria-hidden="true"><use href="#i-sun"/></svg>
+          <svg class="i icon-dark" aria-hidden="true"><use href="#i-moon"/></svg>
+          <svg class="i icon-system" aria-hidden="true"><use href="#i-desktop"/></svg>
         </button>
-        <button class="menu-btn" id="menuBtn" aria-label="Open menu">
-          <span class="bar"></span>
-          <span class="bar"></span>
+        <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+          <svg class="i" aria-hidden="true"><use href="#i-menu"/></svg>
         </button>
       </div>
     </div>
-  </nav>
+  </header>
 
-  <div class="mobile-menu" id="mobileMenu">
-    <button aria-label="Close menu" class="close-btn" id="closeMenu">×</button>
+  <div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Site menu">
+    <div class="menu-top">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">ON</span>
+        <span>Onyeka Nwokike</span>
+      </a>
+      <button class="icon-btn" id="menuClose" aria-label="Close menu">
+        <svg class="i" aria-hidden="true"><use href="#i-close"/></svg>
+      </button>
+    </div>
     <ul>
-      <li><a href="index.html#work">Work</a></li>
-      <li><a href="index.html#research">Research</a></li>
-      <li><a href="index.html#about">About</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="mailto:nwokikeonyeka@gmail.com">Contact</a></li>
+      <li><a href="index.html#work"><span>01</span>Work</a></li>
+      <li><a href="index.html#research"><span>02</span>Research</a></li>
+      <li><a href="index.html#about"><span>03</span>About</a></li>
+      <li><a href="services.html"><span>04</span>Services</a></li>
+      <li><a href="index.html#contact"><span>05</span>Contact</a></li>
     </ul>
+    <div class="menu-foot">
+      <a href="https://github.com/Nwokike" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/onyeka-nwokike" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://huggingface.co/nwokikeonyeka" target="_blank" rel="noopener">Hugging Face</a>
+      <a href="mailto:nwokikeonyeka@gmail.com">Email</a>
+    </div>
   </div>
 
-  <main id="top">
-
+  <main id="main">
     <section class="page-hero">
-      <div class="container">
-        <p class="eyebrow">Services</p>
-        <h1 class="page-title">I build software. Web, mobile, AI, data.</h1>
+      <div class="wrap">
+        <p class="kicker">Services</p>
+        <h1>Software that ships.</h1>
         <p class="page-lede">
-          Whether you need a web platform, a mobile app, an AI-powered feature, or a data tool, I can help. I handle everything from design to deployment.
+          Web platforms, cross-platform apps, AI features and data tools. I handle the work from
+          architecture and interface to deployment and store submission.
         </p>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container">
+    <section class="section" style="border-top:none;padding-top:0">
+      <div class="wrap">
         <div class="services-grid">
-
-          <div class="service-card">
-            <h3>Web Platform</h3>
-            <p>Full-stack web applications tailored to your needs.</p>
+          <article class="service-card">
+            <h2>Web platform</h2>
+            <p>Full-stack web applications built around your workflow, not a template.</p>
             <div class="service-details">
-              <strong>Typical scope:</strong>
+              <strong>Typical scope</strong>
               <ul>
-                <li>Backend + API development</li>
-                <li>Frontend with modern, responsive design</li>
-                <li>Authentication, payments, role-based access</li>
-                <li>Database design and optimization</li>
-                <li>Deployment and hosting setup</li>
+                <li>Backend and API development</li>
+                <li>Responsive frontend, server-rendered or SPA</li>
+                <li>Authentication, payments and role-based access</li>
+                <li>Database design and query optimization</li>
+                <li>Deployment, monitoring and handover</li>
               </ul>
-              <strong>Good for:</strong> Startups, marketplaces, SaaS, internal tools, community platforms.
+              <strong>Good for:</strong> startups, marketplaces, SaaS, internal tools and community platforms.
             </div>
-            <div class="service-price">Starting at $200</div>
+            <div class="service-price">From $200 <span>· scoped per project</span></div>
             <div class="service-cta">
-              <a class="btn-block" href="https://www.fiverr.com/maikel7/build-fast-and-responsive-website-or-web-app-using-django" target="_blank">View on Fiverr <i class="fas fa-arrow-up-right-from-square"></i></a>
+              <a class="btn-block" href="https://www.fiverr.com/maikel7/build-fast-and-responsive-website-or-web-app-using-django" target="_blank" rel="noopener">View on Fiverr <svg class="i" aria-hidden="true"><use href="#i-ext"/></svg></a>
             </div>
-          </div>
+          </article>
 
-          <div class="service-card">
-            <h3>Native App</h3>
-            <p>Cross-platform apps that can run on Android, iOS, Windows, macOS, Linux, and web from a single codebase.</p>
+          <article class="service-card">
+            <h2>Cross-platform app</h2>
+            <p>One codebase for Android, iOS, Windows, macOS, Linux and web.</p>
             <div class="service-details">
-              <strong>Typical scope:</strong>
+              <strong>Typical scope</strong>
               <ul>
-                <li>Native-feel app across all platforms</li>
-                <li>Offline-first storage and sync</li>
-                <li>AI integration (chat, voice, vision)</li>
-                <li>Monetization (ads, credits, subscriptions)</li>
-                <li>Google Play submission and optimization</li>
+                <li>Native-feel UI across every platform</li>
+                <li>Offline-first storage and background sync</li>
+                <li>AI integration: chat, voice and vision</li>
+                <li>Monetization: ads, credits and subscriptions</li>
+                <li>Google Play submission and release pipeline</li>
               </ul>
-              <strong>Good for:</strong> Utility apps, education, data tools, social, entertainment, OSINT.
+              <strong>Good for:</strong> utilities, education, data tools, media and field applications.
             </div>
-            <div class="service-price">Starting at $250</div>
+            <div class="service-price">From $250 <span>· scoped per project</span></div>
             <div class="service-cta">
-              <a class="btn-block" href="mailto:nwokikeonyeka@gmail.com?subject=Mobile%20app%20project">Discuss your app</a>
+              <a class="btn-block" href="mailto:nwokikeonyeka@gmail.com?subject=Cross-platform%20app%20project">Discuss your app <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
             </div>
-          </div>
+          </article>
 
-          <div class="service-card">
-            <h3>AI & Automation</h3>
-            <p>Smart features, AI agents, and automated workflows for your product or process.</p>
+          <article class="service-card">
+            <h2>AI &amp; automation</h2>
+            <p>Agents and automated workflows that do real work, with guardrails.</p>
             <div class="service-details">
-              <strong>Typical scope:</strong>
+              <strong>Typical scope</strong>
               <ul>
-                <li>AI agents that research, analyze, and act on their own</li>
-                <li>Multi-model setups with fallback and failover</li>
-                <li>Vision, audio, and text analysis</li>
-                <li>Web research integration</li>
-                <li>MCP client wiring to your data sources</li>
+                <li>Agents that research, analyze and act</li>
+                <li>Multi-model routing with fallback and failover</li>
+                <li>Vision, audio and document analysis</li>
+                <li>Web research and retrieval grounding</li>
+                <li>Evaluation, approval gates and audit logs</li>
               </ul>
-              <strong>Good for:</strong> Automating research, content generation, reporting, data pipelines.
+              <strong>Good for:</strong> research automation, content pipelines, reporting and internal operations.
             </div>
-            <div class="service-price">Starting at $300</div>
+            <div class="service-price">From $300 <span>· scoped per project</span></div>
             <div class="service-cta">
-              <a class="btn-block" href="https://www.fiverr.com/maikel7/build-smart-ai-features-and-llm-apis-into-your-django-backend" target="_blank">View on Fiverr <i class="fas fa-arrow-up-right-from-square"></i></a>
+              <a class="btn-block" href="https://www.fiverr.com/maikel7/build-smart-ai-features-and-llm-apis-into-your-django-backend" target="_blank" rel="noopener">View on Fiverr <svg class="i" aria-hidden="true"><use href="#i-ext"/></svg></a>
             </div>
-          </div>
+          </article>
 
-          <div class="service-card">
-            <h3>MCP Integration</h3>
-            <p>Connect your product's data and docs to AI agents and tools.</p>
+          <article class="service-card">
+            <h2>MCP integration</h2>
+            <p>Connect your data and documentation to AI agents and editors.</p>
             <div class="service-details">
-              <strong>Typical scope:</strong>
+              <strong>Typical scope</strong>
               <ul>
-                <li>Custom MCP server built and published</li>
-                <li>GitHub sync, caching, and fuzzy search</li>
-                <li>MCP client wiring into existing pipelines</li>
-                <li>Client configs for Cursor, Claude, VS Code, Zed</li>
+                <li>Custom MCP server, built and published</li>
+                <li>Secure tool design and scoped permissions</li>
+                <li>Source-of-truth indexing and search</li>
+                <li>Client setup for Claude, Cursor, VS Code, Zed and OpenCode</li>
+                <li>Deployment and monitoring</li>
               </ul>
-              <strong>Good for:</strong> Documentation platforms, APIs, internal knowledge bases.
+              <strong>Good for:</strong> documentation platforms, APIs, internal knowledge bases and dev tools.
             </div>
-            <div class="service-price">Starting at $100</div>
+            <div class="service-price">From $100 <span>· scoped per project</span></div>
             <div class="service-cta">
-              <a class="btn-block" href="https://www.fiverr.com/maikel7/make-your-saas-agent-ready-with-model-context-protocol-mcp" target="_blank">View on Fiverr <i class="fas fa-arrow-up-right-from-square"></i></a>
+              <a class="btn-block" href="https://www.fiverr.com/maikel7/make-your-saas-agent-ready-with-model-context-protocol-mcp" target="_blank" rel="noopener">View on Fiverr <svg class="i" aria-hidden="true"><use href="#i-ext"/></svg></a>
             </div>
-          </div>
+          </article>
 
-          <div class="service-card">
-            <h3>Model Fine-Tuning</h3>
-            <p>Fine-tune open-source models for your domain, language, or task.</p>
+          <article class="service-card">
+            <h2>Model fine-tuning</h2>
+            <p>Adapt an open model to your domain, language or task.</p>
             <div class="service-details">
-              <strong>Typical scope:</strong>
+              <strong>Typical scope</strong>
               <ul>
-                <li>LoRA / PEFT fine-tuning on models like Phi, Llama, Gemma</li>
-                <li>Dataset preparation, formatting, and cleaning</li>
-                <li>Checkpoint-resume strategy for long training runs</li>
+                <li>LoRA / PEFT fine-tuning on Phi, Llama, Gemma and Qwen</li>
+                <li>Dataset preparation, cleaning and formatting</li>
+                <li>Checkpoint-resume strategy for long runs</li>
                 <li>GGUF export and publish to Hugging Face</li>
-                <li>Inference setup (llama.cpp, Ollama)</li>
+                <li>Inference setup with llama.cpp or Ollama</li>
               </ul>
-              <strong>Good for:</strong> Specialized domains, low-resource languages, niche tasks.
+              <strong>Good for:</strong> specialized domains, low-resource languages and niche classification tasks.
             </div>
-            <div class="service-price">Starting at $200</div>
+            <div class="service-price">From $200 <span>· scoped per project</span></div>
             <div class="service-cta">
-              <a class="btn-block" href="mailto:nwokikeonyeka@gmail.com?subject=Model%20fine-tuning%20project">Discuss fine-tuning</a>
+              <a class="btn-block" href="mailto:nwokikeonyeka@gmail.com?subject=Model%20fine-tuning%20project">Discuss fine-tuning <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
             </div>
-          </div>
+          </article>
 
-          <div class="service-card">
-            <h3>Code Audit</h3>
-            <p>Get your codebase reviewed, cleaned up, and production-ready.</p>
+          <article class="service-card">
+            <h2>Code audit</h2>
+            <p>A focused review that turns a fragile codebase into a maintainable one.</p>
             <div class="service-details">
-              <strong>Typical scope:</strong>
+              <strong>Typical scope</strong>
               <ul>
-                <li>Full codebase review</li>
-                <li>Bug hunting, dead code removal, refactoring</li>
-                <li>Security review and dependency fixes</li>
-                <li>Test coverage, typing, documentation gaps</li>
-                <li>Clear fix list with prioritized action items</li>
+                <li>Full codebase and architecture review</li>
+                <li>Bug hunting, dead code and refactoring</li>
+                <li>Security and dependency review</li>
+                <li>Tests, typing and documentation gaps</li>
+                <li>Prioritized fix list with estimates</li>
               </ul>
-              <strong>Good for:</strong> Teams that shipped fast and need a cleanup, or founders with AI-generated code that needs tightening.
+              <strong>Good for:</strong> teams that shipped fast and need a cleanup, or AI-generated code that needs tightening.
             </div>
-            <div class="service-price">Starting at $150</div>
+            <div class="service-price">From $150 <span>· scoped per project</span></div>
             <div class="service-cta">
-              <a class="btn-block" href="https://www.fiverr.com/maikel7/audit-your-ai-generated-codebase-and-fix-vibe-code-bugs" target="_blank">View on Fiverr <i class="fas fa-arrow-up-right-from-square"></i></a>
+              <a class="btn-block" href="https://www.fiverr.com/maikel7/audit-your-ai-generated-codebase-and-fix-vibe-code-bugs" target="_blank" rel="noopener">View on Fiverr <svg class="i" aria-hidden="true"><use href="#i-ext"/></svg></a>
             </div>
-          </div>
+          </article>
 
-          <div class="service-card">
-            <h3>Data & Dashboards</h3>
-            <p>Collect, analyze, and visualize data with optional privacy-first approach.</p>
+          <article class="service-card">
+            <h2>Data &amp; dashboards</h2>
+            <p>Collect, analyze and visualize data without sending it to someone else's server.</p>
             <div class="service-details">
-              <strong>Typical scope:</strong>
+              <strong>Typical scope</strong>
               <ul>
-                <li>Data ingestion from any source (CSV, Excel, SQL, JSON, APIs)</li>
+                <li>Ingestion from CSV, Excel, SQL, JSON and APIs</li>
                 <li>Analysis pipelines and interactive charts</li>
                 <li>Surveys and live report generation</li>
                 <li>Export to PDF or PowerPoint</li>
-                <li>Voice input and natural language queries</li>
+                <li>Natural-language and voice queries</li>
               </ul>
-              <strong>Good for:</strong> Researchers, NGOs, businesses, educators.
+              <strong>Good for:</strong> researchers, NGOs, businesses and educators.
             </div>
-            <div class="service-price">Starting at $50</div>
+            <div class="service-price">From $50 <span>· scoped per project</span></div>
             <div class="service-cta">
-              <a class="btn-block" href="mailto:nwokikeonyeka@gmail.com?subject=Data%20project">Discuss your data project</a>
+              <a class="btn-block" href="mailto:nwokikeonyeka@gmail.com?subject=Data%20project">Discuss your data project <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
             </div>
-          </div>
-
+          </article>
         </div>
       </div>
     </section>
 
     <section class="section">
-      <div class="container">
-        <h2 class="section-head">Frequently Asked Questions</h2>
-        <div class="faq-list">
-
-          <div class="faq-item">
-            <button class="faq-question">
-              How do we start?
-              <span class="faq-toggle">+</span>
-            </button>
-            <div class="faq-answer">
-              <p>Send me an email with a short description of your project, your goal, your timeline, and your budget. I'll reply with a scope and proposal.</p>
-            </div>
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="kicker">Process</p>
+            <h2>How it works</h2>
           </div>
-
-          <div class="faq-item">
-            <button class="faq-question">
-              Do you offer maintenance after launch?
-              <span class="faq-toggle">+</span>
-            </button>
-            <div class="faq-answer">
-              <p>Yes. We can set up a monthly retainer for updates, monitoring, and support after launch.</p>
+        </div>
+        <div class="work-grid" style="grid-template-columns:repeat(3,1fr)">
+          <article class="card" style="padding:24px">
+            <div class="card-body" style="padding:0">
+              <div class="model-type">01 / Scope</div>
+              <h3 style="margin:10px 0 8px">A written scope</h3>
+              <p style="margin:0">We agree on the outcome, constraints, timeline and budget before any code is written.</p>
             </div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-question">
-              What's a typical timeline?
-              <span class="faq-toggle">+</span>
-            </button>
-            <div class="faq-answer">
-              <p>A data tool or MCP server usually takes 1 to 2 weeks. A web platform or mobile app runs 3 to 8 weeks depending on scope. AI and fine-tuning projects vary most, but I'll give you a clear estimate upfront.</p>
+          </article>
+          <article class="card" style="padding:24px">
+            <div class="card-body" style="padding:0">
+              <div class="model-type">02 / Build</div>
+              <h3 style="margin:10px 0 8px">Working software</h3>
+              <p style="margin:0">Weekly demos and a running build. You see progress in the product, not in a status report.</p>
             </div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-question">
-              Can you work with my existing codebase?
-              <span class="faq-toggle">+</span>
-            </button>
-            <div class="faq-answer">
-              <p>Yes. I can jump into an existing project to add features, refactor, or integrate AI without a full rewrite.</p>
+          </article>
+          <article class="card" style="padding:24px">
+            <div class="card-body" style="padding:0">
+              <div class="model-type">03 / Ship</div>
+              <h3 style="margin:10px 0 8px">Launch and handover</h3>
+              <p style="margin:0">Deployment, store submission, documentation and a clean handover of the codebase.</p>
             </div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-question">
-              Can you publish to app stores or package registries?
-              <span class="faq-toggle">+</span>
-            </button>
-            <div class="faq-answer">
-              <p>Yes. I can package a tool for PyPI, submit a mobile app to Google Play, or publish models and datasets to Hugging Face under your account.</p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-question">
-              What if my project doesn't fit these categories?
-              <span class="faq-toggle">+</span>
-            </button>
-            <div class="faq-answer">
-              <p>Reach out anyway. These are the most common requests I get, but I work across a lot of areas. If I can't help, I'll say so upfront.</p>
-            </div>
-          </div>
-
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="contact">
-      <div class="container">
-        <p class="contact-eyebrow">Have a project in mind?</p>
-        <h2 class="contact-title">
-          <a href="mailto:nwokikeonyeka@gmail.com">nwokikeonyeka@gmail.com</a>
-        </h2>
-        <div class="hero-socials">
-          <a href="https://www.fiverr.com/maikel7" target="_blank" aria-label="Fiverr"><i class="fas fa-globe"></i> Fiverr</a>
-          <a href="https://github.com/Nwokike" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i> GitHub</a>
-          <a href="https://www.linkedin.com/in/onyeka-nwokike" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i> LinkedIn</a>
-          <a href="https://huggingface.co/nwokikeonyeka" target="_blank" aria-label="Hugging Face"><i class="fas fa-face-smile"></i> Hugging Face</a>
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="kicker">FAQ</p>
+            <h2>Questions</h2>
+          </div>
+        </div>
+        <div class="faq">
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">How do we start? <span class="plus" aria-hidden="true">+</span></button>
+            <div class="faq-a"><p>Send a short description of the project, the goal, the timeline and the budget. I reply with a scope and a proposal.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">Do you offer maintenance after launch? <span class="plus" aria-hidden="true">+</span></button>
+            <div class="faq-a"><p>Yes. We can set up a monthly retainer for updates, monitoring and support after launch.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">What is a typical timeline? <span class="plus" aria-hidden="true">+</span></button>
+            <div class="faq-a"><p>A data tool or MCP server usually takes one to two weeks. A web platform or mobile app runs three to eight weeks depending on scope. AI and fine-tuning projects vary most, but you get a clear estimate upfront.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">Can you work with my existing codebase? <span class="plus" aria-hidden="true">+</span></button>
+            <div class="faq-a"><p>Yes. I can join an existing project to add features, refactor, or integrate AI without a full rewrite.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">Can you publish to app stores and package registries? <span class="plus" aria-hidden="true">+</span></button>
+            <div class="faq-a"><p>Yes. I can package a tool for PyPI, submit an app to Google Play, or publish models and datasets to Hugging Face under your account.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">What if my project does not fit these categories? <span class="plus" aria-hidden="true">+</span></button>
+            <div class="faq-a"><p>Reach out anyway. These are the most common requests, but I work across a lot of areas. If I cannot help, I will say so upfront.</p></div>
+          </div>
         </div>
       </div>
     </section>
 
+    <section class="contact" id="contact">
+      <div class="wrap contact-grid">
+        <div>
+          <p class="kicker">Contact</p>
+          <h2>Have a project<br>in mind?</h2>
+          <a class="contact-email" href="mailto:nwokikeonyeka@gmail.com">nwokikeonyeka@gmail.com</a>
+        </div>
+        <div class="contact-links">
+          <a href="https://github.com/Nwokike" target="_blank" rel="noopener"><svg class="i fill" aria-hidden="true"><use href="#i-github"/></svg> GitHub</a>
+          <a href="https://www.linkedin.com/in/onyeka-nwokike" target="_blank" rel="noopener"><svg class="i fill" aria-hidden="true"><use href="#i-linkedin"/></svg> LinkedIn</a>
+          <a href="https://huggingface.co/nwokikeonyeka" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-smile"/></svg> Hugging Face</a>
+          <a href="https://www.fiverr.com/maikel7" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-box"/></svg> Fiverr</a>
+          <p class="footer-muted" style="font-size:12.5px;margin-top:6px">Enugu, Nigeria · Working worldwide</p>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
-    <div class="container footer-inner">
-      <span>&copy; <span id="year"></span> Onyeka Nwokike</span>
-      <span class="footer-muted">Enugu, Nigeria · <a href="https://kiri.ng" target="_blank" class="footer-link">Kiri Research Labs</a></span>
+    <div class="wrap footer-inner">
+      <span>© <span id="year"></span> Onyeka Nwokike</span>
+      <span class="footer-muted">Enugu, Nigeria · <a href="https://kiri.ng" target="_blank" rel="noopener">Kiri Research Labs</a></span>
     </div>
   </footer>
 
   <script src="js/script.js"></script>
-  <script>
-    document.querySelectorAll('.faq-question').forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        var item = btn.closest('.faq-item');
-        var isOpen = item.classList.contains('open');
-        document.querySelectorAll('.faq-item').forEach(function (i) { i.classList.remove('open'); });
-        if (!isOpen) item.classList.add('open');
-      });
-    });
-  </script>
 </body>
 </html>

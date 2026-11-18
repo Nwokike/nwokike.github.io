@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found | Onyeka Nwokike</title>
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+  <style>
+    .nf { min-height: 70vh; display: grid; place-items: center; padding: 80px 0; }
+    .nf-inner { max-width: 560px; }
+    .nf-code { font-family: var(--mono); font-size: 13px; letter-spacing: .16em; color: var(--accent); text-transform: uppercase; margin-bottom: 18px; }
+    .nf h1 { font-size: clamp(40px, 7vw, 72px); margin-bottom: 18px; }
+    .nf p { color: var(--muted); font-size: 17px; margin-bottom: 28px; }
+    .nf-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">ON</span><span>Onyeka Nwokike</span></a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="/#work">Work</a>
+        <a href="/#research">Research</a>
+        <a href="/#about">About</a>
+        <a href="/services.html">Services</a>
+        <a href="/#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="icon-btn" href="/" aria-label="Home">
+          <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11 12 4l8 7v9h-5v-6H9v6H4z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="nf">
+    <div class="wrap nf-inner">
+      <p class="nf-code">Error 404</p>
+      <h1>This page moved on.</h1>
+      <p>The link is broken or the page no longer exists. The work, research and services pages are still here.</p>
+      <div class="nf-actions">
+        <a class="btn btn-primary" href="/">Back home</a>
+        <a class="btn btn-ghost" href="/#work">Selected work</a>
+        <a class="btn btn-ghost" href="mailto:nwokikeonyeka@gmail.com">Email</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <span>© <span id="year"></span> Onyeka Nwokike</span>
+      <span class="footer-muted">Enugu, Nigeria · <a href="https://kiri.ng">Kiri Research Labs</a></span>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

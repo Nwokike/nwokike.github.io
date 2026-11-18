@@ -1,344 +1,532 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Onyeka Nwokike — Software Engineer (AI/Data)</title>
-  <meta name="description" content="Onyeka Nwokike — Software Engineer specializing in Python, Django, Flet, AI/ML, data analysis, and SEO. Web and mobile applications, AI agents, APIs, and data tools."/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Onyeka Nwokike | Software Engineer &amp; Researcher</title>
+  <meta name="description" content="Onyeka Nwokike builds cross-platform apps for Android, Windows and Linux, plus developer tooling and AI systems. 8 apps shipped, 5 PyPI packages, 4 models and 9 datasets on Hugging Face.">
+  <link rel="canonical" href="https://nwokike.github.io/">
 
   <script>
     (function () {
       try {
         var saved = localStorage.getItem('theme') || 'system';
-        var sysDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        var dark = saved === 'dark' || (saved === 'system' && sysDark);
-        document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
-      } catch (e) {
-        document.documentElement.setAttribute('data-theme', 'light');
-      }
+        if (saved === 'light' || saved === 'dark') {
+          document.documentElement.setAttribute('data-theme', saved);
+        }
+      } catch (e) {}
     })();
   </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link href="css/style.css" rel="stylesheet"/>
-  <link href="images/FB_IMG.jpg" rel="icon"/>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="preload" as="image" href="images/work/card-igbo.jpg">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Onyeka Nwokike">
+  <meta property="og:title" content="Onyeka Nwokike | Software Engineer &amp; Researcher">
+  <meta property="og:description" content="Cross-platform apps, developer tooling and AI systems. 8 apps shipped, 5 PyPI packages, 4 models and 9 datasets on Hugging Face.">
+  <meta property="og:url" content="https://nwokike.github.io/">
+  <meta property="og:image" content="https://nwokike.github.io/images/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Onyeka Nwokike, software engineer and researcher">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@aham_bu_onyeka">
+  <meta name="twitter:title" content="Onyeka Nwokike | Software Engineer &amp; Researcher">
+  <meta name="twitter:description" content="Cross-platform apps, developer tooling and AI systems. 8 apps shipped, 5 PyPI packages, 4 models and 9 datasets on Hugging Face.">
+  <meta name="twitter:image" content="https://nwokike.github.io/images/og.png">
+  <meta name="theme-color" content="#faf9f6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b0b0a" media="(prefers-color-scheme: dark)">
 </head>
 <body>
-  <nav class="nav">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <svg aria-hidden="true" focusable="false" width="0" height="0" style="position:absolute">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-ext" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v10m0 0 4-4m-4 4-4-4M5 19h14"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.5 2.87 8.32 6.84 9.67.5.09.68-.22.68-.49 0-.24-.01-.87-.01-1.7-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05a9.4 9.4 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.59.69.49A10.02 10.02 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3zM10 9h3.8v1.64h.05c.53-.95 1.83-1.95 3.76-1.95C21.4 8.69 22 11.1 22 14.2V21h-4v-6.03c0-1.44-.03-3.29-2.1-3.29-2.1 0-2.42 1.56-2.42 3.18V21h-3.98z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 7 8.5 6 8.5-6"/></symbol>
+    <symbol id="i-smile" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8.3 14.4a4.6 4.6 0 0 0 7.4 0"/><circle cx="9" cy="9.8" r=".7" fill="currentColor" stroke="none"/><circle cx="15" cy="9.8" r=".7" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-box" viewBox="0 0 24 24"><path d="m21 8-9-5-9 5v8l9 5 9-5z"/><path d="m3 8 9 5 9-5M12 13v8"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5.5v13l10-6.5z"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></symbol>
+    <symbol id="i-desktop" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="1.5"/><path d="M9 20h6M12 16v4"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+  </svg>
+
+  <header class="nav" id="top">
     <div class="nav-inner">
-      <a href="#top" class="nav-logo">Onyeka Nwokike</a>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#work">Work</a></li>
-        <li><a href="#research">Research</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="mailto:nwokikeonyeka@gmail.com">Contact</a></li>
-      </ul>
+      <a class="brand" href="#top" aria-label="Onyeka Nwokike, home">
+        <span class="brand-mark" aria-hidden="true">ON</span>
+        <span>Onyeka Nwokike</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#work">Work</a>
+        <a href="#research">Research</a>
+        <a href="#about">About</a>
+        <a href="services.html">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
       <div class="nav-actions">
-        <button id="themeToggle" class="theme-toggle" title="Switch theme" aria-label="Switch theme">
-          <i class="fas fa-sun icon-light" aria-hidden="true"></i>
-          <i class="fas fa-moon icon-dark" aria-hidden="true"></i>
-          <i class="fas fa-desktop icon-system" aria-hidden="true"></i>
+        <button class="icon-btn theme-toggle" id="themeToggle" aria-label="Switch theme: system">
+          <svg class="i icon-light" aria-hidden="true"><use href="#i-sun"/></svg>
+          <svg class="i icon-dark" aria-hidden="true"><use href="#i-moon"/></svg>
+          <svg class="i icon-system" aria-hidden="true"><use href="#i-desktop"/></svg>
         </button>
-        <button class="menu-btn" id="menuBtn" aria-label="Open menu">
-          <span class="bar"></span>
-          <span class="bar"></span>
+        <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+          <svg class="i" aria-hidden="true"><use href="#i-menu"/></svg>
         </button>
       </div>
     </div>
-  </nav>
+  </header>
 
-  <div class="mobile-menu" id="mobileMenu">
-    <button aria-label="Close menu" class="close-btn" id="closeMenu">×</button>
+  <div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Site menu">
+    <div class="menu-top">
+      <a class="brand" href="#top">
+        <span class="brand-mark" aria-hidden="true">ON</span>
+        <span>Onyeka Nwokike</span>
+      </a>
+      <button class="icon-btn" id="menuClose" aria-label="Close menu">
+        <svg class="i" aria-hidden="true"><use href="#i-close"/></svg>
+      </button>
+    </div>
     <ul>
-      <li><a href="#work">Work</a></li>
-      <li><a href="#research">Research</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="mailto:nwokikeonyeka@gmail.com">Contact</a></li>
+      <li><a href="#work"><span>01</span>Work</a></li>
+      <li><a href="#research"><span>02</span>Research</a></li>
+      <li><a href="#about"><span>03</span>About</a></li>
+      <li><a href="services.html"><span>04</span>Services</a></li>
+      <li><a href="#contact"><span>05</span>Contact</a></li>
     </ul>
+    <div class="menu-foot">
+      <a href="https://github.com/Nwokike" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/onyeka-nwokike" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://huggingface.co/nwokikeonyeka" target="_blank" rel="noopener">Hugging Face</a>
+      <a href="mailto:nwokikeonyeka@gmail.com">Email</a>
+    </div>
   </div>
 
-  <main id="top">
-
+  <main id="main">
     <section class="hero">
-      <div class="container">
-        <p class="eyebrow">Enugu, Nigeria · Available for hire</p>
-        <h1 class="hero-title">Onyeka Nwokike</h1>
-        <p class="hero-sub">Software Engineer (AI/Data) · Agricultural & Bioresources Engineer</p>
-        <p class="hero-lede">
-          I build web apps, mobile apps, AI agents, and data tools. Python stack mostly. Based in Enugu, working with clients locally and internationally.
-        </p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#work">View work</a>
-          <a class="btn btn-ghost" href="services.html">Services</a>
-          <a class="btn btn-ghost" href="pdfs/CV_ONYEKA_NWOKIKE.pdf" target="_blank">Download CV</a>
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow"><span class="dot" aria-hidden="true"></span> Enugu, Nigeria · Open to work</p>
+          <h1>Onyeka<br>Nwokike</h1>
+          <p class="hero-role">Software engineer &amp; researcher</p>
+          <p class="hero-lede">
+            I build cross-platform apps for Android, Windows and Linux, plus developer tools
+            and AI systems in Python and Flet. Shipped to Google Play, PyPI and Hugging Face.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#work">Selected work <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a class="btn btn-ghost" href="pdfs/CV_ONYEKA_NWOKIKE.pdf" target="_blank" rel="noopener">Download CV <svg class="i" aria-hidden="true"><use href="#i-download"/></svg></a>
+            <a class="btn btn-ghost" href="mailto:nwokikeonyeka@gmail.com">Email</a>
+          </div>
+          <div class="socials">
+            <a href="https://github.com/Nwokike" target="_blank" rel="noopener"><svg class="i fill" aria-hidden="true"><use href="#i-github"/></svg> GitHub</a>
+            <a href="https://www.linkedin.com/in/onyeka-nwokike" target="_blank" rel="noopener"><svg class="i fill" aria-hidden="true"><use href="#i-linkedin"/></svg> LinkedIn</a>
+            <a href="https://huggingface.co/nwokikeonyeka" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-smile"/></svg> Hugging Face</a>
+          </div>
         </div>
-        <div class="hero-socials">
-          <a href="https://github.com/Nwokike" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i> GitHub</a>
-          <a href="https://www.linkedin.com/in/onyeka-nwokike" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i> LinkedIn</a>
-          <a href="https://huggingface.co/nwokikeonyeka" target="_blank" aria-label="Hugging Face"><i class="fas fa-face-smile"></i> Hugging Face</a>
-          <a href="mailto:nwokikeonyeka@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i> Email</a>
+
+        <div class="art-grid" aria-label="Product previews">
+          <figure class="art art-a">
+            <img src="images/work/card-igbo.jpg" alt="Igbo Archives cultural preservation platform on desktop and mobile" width="1200" height="900" fetchpriority="high">
+          </figure>
+          <figure class="art">
+            <img src="images/work/card-asase.jpg" alt="Asase global earth intelligence dashboard" width="1200" height="900">
+          </figure>
+          <figure class="art">
+            <img src="images/work/card-colab.jpg" alt="Colab Shell app screens" width="1200" height="900" loading="lazy">
+          </figure>
         </div>
       </div>
     </section>
 
-    <section class="stats">
-      <div class="container stats-grid">
-        <div class="stat">
-          <div class="stat-num">4</div>
-          <div class="stat-label">Mobile apps on Google Play</div>
-        </div>
-        <div class="stat">
-          <div class="stat-num">2</div>
-          <div class="stat-label">Packages published on PyPI</div>
-        </div>
-        <div class="stat">
+    <section class="proof" aria-label="By the numbers">
+      <div class="wrap proof-grid">
+        <div>
           <div class="stat-num">8</div>
-          <div class="stat-label">Datasets on Hugging Face</div>
+          <div class="stat-label">apps spanning Android, Windows and Linux</div>
         </div>
-        <div class="stat">
-          <div class="stat-num">31</div>
-          <div class="stat-label">Open-source repositories</div>
+        <div>
+          <div class="stat-num">5</div>
+          <div class="stat-label">packages published on PyPI</div>
         </div>
+        <div>
+          <div class="stat-num">4 + 9</div>
+          <div class="stat-label">models and datasets on Hugging Face</div>
+        </div>
+        <div>
+          <div class="stat-num">25+</div>
+          <div class="stat-label">public repositories</div>
+        </div>
+      </div>
+      <div class="wrap platforms">
+        <span class="platforms-label">Ships to</span>
+        <span>Android</span>
+        <span>Windows</span>
+        <span>Linux</span>
+        <span>Web</span>
       </div>
     </section>
 
     <section class="section" id="work">
-      <div class="container">
-        <h2 class="section-head">Selected Work</h2>
-        <ol class="work-list">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="kicker">01 / Work</p>
+            <h2>Selected work</h2>
+            <p class="section-sub">A selection of current work, not the full list. I ship often, so this page changes.</p>
+            <p class="updated">Updated November 2026</p>
+          </div>
+          <div class="filters" role="group" aria-label="Filter work">
+            <button class="filter" data-filter="all" aria-pressed="true">All <span>9</span></button>
+            <button class="filter" data-filter="apps" aria-pressed="false">Apps <span>7</span></button>
+            <button class="filter" data-filter="platform" aria-pressed="false">Platform <span>1</span></button>
+            <button class="filter" data-filter="tools" aria-pressed="false">Developer tools <span>1</span></button>
+          </div>
+        </div>
 
-          <li class="work-item">
-            <a class="work-link" href="https://github.com/Nwokike/igbo-archives-platform" target="_blank">
-              <div class="work-meta">
-                <span class="work-num">01</span>
-                <span class="work-title">Igbo Archives</span>
-              </div>
-              <div class="work-info">
-                <span class="work-desc">Cultural preservation PWA · Django, HTMX, MCP server</span>
-                <span class="work-arrow"><i class="fas fa-arrow-right"></i></span>
-              </div>
+        <div class="work-grid" id="workGrid">
+          <article class="card reveal" data-cat="platform">
+            <a class="card-media" href="https://igboarchives.com.ng" target="_blank" rel="noopener" aria-label="Open the Igbo Archives live site">
+              <img src="images/work/card-igbo.jpg" alt="Igbo Archives home page on desktop and mobile" width="1200" height="900" loading="lazy">
+              <span class="status live">Live</span>
             </a>
-          </li>
+            <div class="card-body">
+              <div class="card-top"><h3>Igbo Archives</h3><span class="year">2024</span></div>
+              <p>Cultural preservation PWA with archives, lore, book reviews, an AI assistant, a REST API and an MCP server.</p>
+              <ul class="tags"><li>Django</li><li>HTMX</li><li>SQLite</li><li>MCP</li></ul>
+              <div class="card-links">
+                <a href="https://igboarchives.com.ng" target="_blank" rel="noopener">Live site <svg class="i" aria-hidden="true"><use href="#i-ext"/></svg></a>
+              </div>
+            </div>
+          </article>
 
-          <li class="work-item">
-            <a class="work-link" href="https://github.com/Nwokike/ADKbot" target="_blank">
-              <div class="work-meta">
-                <span class="work-num">02</span>
-                <span class="work-title">ADKbot</span>
-                <span class="badge-store">PyPI</span>
-              </div>
-              <div class="work-info">
-                <span class="work-desc">Multi-model assistant framework · 50+ LLM providers</span>
-                <span class="work-arrow"><i class="fas fa-arrow-right"></i></span>
-              </div>
+          <article class="card reveal" data-cat="apps">
+            <a class="card-media" href="https://play.google.com/store/apps/details?id=ng.kiri.ffmpeg" target="_blank" rel="noopener" aria-label="Get FFmpeg AV on Google Play">
+              <img src="images/work/card-ffmpeg.jpg" alt="FFmpeg AV app screens on mobile" width="1200" height="900" loading="lazy">
+              <span class="status launching">Launching</span>
             </a>
-          </li>
+            <div class="card-body">
+              <div class="card-top"><h3>FFmpeg AV</h3><span class="year">2026</span></div>
+              <p>On-device media studio: transcode, cut, join, extract and master on Android, Windows and Linux.</p>
+              <ul class="tags"><li>PyAV</li><li>Flet</li><li>FFmpeg</li></ul>
+              <div class="card-links">
+                <a href="https://play.google.com/store/apps/details?id=ng.kiri.ffmpeg" target="_blank" rel="noopener">Play Store <svg class="i" aria-hidden="true"><use href="#i-ext"/></svg></a>
+                <a href="https://github.com/Nwokike/FFmpeg" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </div>
+          </article>
 
-          <li class="work-item">
-            <a class="work-link" href="https://github.com/Nwokike/flet-mcp-server" target="_blank">
-              <div class="work-meta">
-                <span class="work-num">03</span>
-                <span class="work-title">Flet MCP Server</span>
-                <span class="badge-store">PyPI</span>
-              </div>
-              <div class="work-info">
-                <span class="work-desc">MCP server for AI agents · docs, controls, ecosystem packages</span>
-                <span class="work-arrow"><i class="fas fa-arrow-right"></i></span>
-              </div>
+          <article class="card reveal" data-cat="apps">
+            <a class="card-media" href="https://play.google.com/store/apps/details?id=ng.kiri.prootdistro" target="_blank" rel="noopener" aria-label="Get Proot Distro X11 on Google Play">
+              <img src="images/work/card-proot.jpg" alt="Proot Distro X11 app screens" width="1200" height="900" loading="lazy">
+              <span class="status launching">Launching</span>
             </a>
-          </li>
+            <div class="card-body">
+              <div class="card-top"><h3>Proot Distro X11</h3><span class="year">2026</span></div>
+              <p>Linux on Android without root: Debian, Ubuntu, Alpine or any Docker image, with a real X11 desktop.</p>
+              <ul class="tags"><li>proot</li><li>Xvnc</li><li>QEMU</li><li>Flet</li></ul>
+              <div class="card-links">
+                <a href="https://play.google.com/store/apps/details?id=ng.kiri.prootdistro" target="_blank" rel="noopener">Play Store <svg class="i" aria-hidden="true"><use href="#i-ext"/></svg></a>
+                <a href="https://github.com/Nwokike/proot-distro" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </div>
+          </article>
 
-          <li class="work-item">
-            <a class="work-link" href="https://play.google.com/store/apps/details?id=com.spaninsight.app" target="_blank">
-              <div class="work-meta">
-                <span class="work-num">04</span>
-                <span class="work-title">SpanInsight</span>
-                <span class="badge-store">Play Store</span>
-              </div>
-              <div class="work-info">
-                <span class="work-desc">Privacy-first data analysis app · cross-platform, sandboxed Python</span>
-                <span class="work-arrow"><i class="fas fa-arrow-right"></i></span>
-              </div>
+          <article class="card reveal" data-cat="apps">
+            <a class="card-media" href="https://play.google.com/store/apps/details?id=ng.kiri.collabshell" target="_blank" rel="noopener" aria-label="Get Colab Shell on Google Play">
+              <img src="images/work/card-colab.jpg" alt="Colab Shell app screens" width="1200" height="900" loading="lazy">
+              <span class="status live">Live</span>
             </a>
-          </li>
+            <div class="card-body">
+              <div class="card-top"><h3>Colab Shell</h3><span class="year">2026</span></div>
+              <p>Run Colab notebooks and a real terminal from your phone or desktop, with an in-app assistant and GPU/TPU runtimes.</p>
+              <ul class="tags"><li>Flet</li><li>Google Colab</li><li>PTY</li></ul>
+              <div class="card-links">
+                <a href="https://play.google.com/store/apps/details?id=ng.kiri.collabshell" target="_blank" rel="noopener">Play Store <svg class="i" aria-hidden="true"><use href="#i-ext"/></svg></a>
+                <a href="https://github.com/Nwokike/Colab" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </div>
+          </article>
 
-          <li class="work-item">
-            <a class="work-link" href="https://play.google.com/store/apps/details?id=ng.kiri.akili" target="_blank">
-              <div class="work-meta">
-                <span class="work-num">05</span>
-                <span class="work-title">Akili</span>
-                <span class="badge-store">Play Store</span>
-              </div>
-              <div class="work-info">
-                <span class="work-desc">After-school learning app · courses, voice & image AI tutor</span>
-                <span class="work-arrow"><i class="fas fa-arrow-right"></i></span>
-              </div>
+          <article class="card reveal" data-cat="apps">
+            <a class="card-media" href="https://asase.kiri.ng" target="_blank" rel="noopener" aria-label="Open the Asase web app">
+              <img src="images/work/card-asase.jpg" alt="Asase earth intelligence radar dashboard" width="1200" height="900" loading="lazy">
+              <span class="status live">Live</span>
             </a>
-          </li>
+            <div class="card-body">
+              <div class="card-top"><h3>Asase</h3><span class="year">2025</span></div>
+              <p>Global earth-intelligence platform: seismic, space weather, wildfires, floods, air quality and marine telemetry.</p>
+              <ul class="tags"><li>USGS</li><li>NOAA</li><li>NASA</li><li>Flet</li></ul>
+              <div class="card-links">
+                <a href="https://asase.kiri.ng" target="_blank" rel="noopener">Live web <svg class="i" aria-hidden="true"><use href="#i-ext"/></svg></a>
+                <a href="https://play.google.com/store/apps/details?id=ng.kiri.asase" target="_blank" rel="noopener">Play Store</a>
+                <a href="https://github.com/Nwokike/Asase" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </div>
+          </article>
 
-          <li class="work-item">
-            <a class="work-link" href="https://play.google.com/store/apps/details?id=ng.kiri.sherlock" target="_blank">
-              <div class="work-meta">
-                <span class="work-num">06</span>
-                <span class="work-title">Sherlock</span>
-                <span class="badge-store">Play Store</span>
-              </div>
-              <div class="work-info">
-                <span class="work-desc">OSINT app · scans 430+ social networks</span>
-                <span class="work-arrow"><i class="fas fa-arrow-right"></i></span>
-              </div>
+          <article class="card reveal" data-cat="apps">
+            <a class="card-media" href="https://play.google.com/store/apps/details?id=ng.kiri.sherlock" target="_blank" rel="noopener" aria-label="Get Sherlock on Google Play">
+              <img src="images/work/card-sherlock.jpg" alt="Sherlock OSINT app screens" width="1200" height="900" loading="lazy">
+              <span class="status live">Live</span>
             </a>
-          </li>
+            <div class="card-body">
+              <div class="card-top"><h3>Sherlock</h3><span class="year">2026</span></div>
+              <p>OSINT across 5,200+ username networks and 180+ email platforms, with PDF and XMind dossiers on Android, Windows and Linux.</p>
+              <ul class="tags"><li>Maigret</li><li>holehe</li><li>Flet</li></ul>
+              <div class="card-links">
+                <a href="https://play.google.com/store/apps/details?id=ng.kiri.sherlock" target="_blank" rel="noopener">Play Store <svg class="i" aria-hidden="true"><use href="#i-ext"/></svg></a>
+                <a href="https://github.com/Nwokike/Sherlock" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </div>
+          </article>
 
-          <li class="work-item">
-            <a class="work-link" href="https://github.com/Nwokike/kiri-code" target="_blank">
-              <div class="work-meta">
-                <span class="work-num">07</span>
-                <span class="work-title">Kiri Code</span>
-              </div>
-              <div class="work-info">
-                <span class="work-desc">Browser-based coding IDE · WebContainers, Pyodide, isomorphic-git</span>
-                <span class="work-arrow"><i class="fas fa-arrow-right"></i></span>
-              </div>
+          <article class="card reveal" data-cat="apps">
+            <a class="card-media" href="https://play.google.com/store/apps/details?id=ng.kiri.ddgs" target="_blank" rel="noopener" aria-label="Get DDGS on Google Play">
+              <img src="images/work/card-ddgs.jpg" alt="DDGS private search app" width="1200" height="900" loading="lazy">
+              <span class="status live">Live</span>
             </a>
-          </li>
+            <div class="card-body">
+              <div class="card-top"><h3>DDGS</h3><span class="year">2026</span></div>
+              <p>Private metasearch across 9 engines, with downloads, page extraction and an AI assistant on Android, Windows and Linux.</p>
+              <ul class="tags"><li>ddgs</li><li>primp</li><li>Flet</li></ul>
+              <div class="card-links">
+                <a href="https://play.google.com/store/apps/details?id=ng.kiri.ddgs" target="_blank" rel="noopener">Play Store <svg class="i" aria-hidden="true"><use href="#i-ext"/></svg></a>
+                <a href="https://github.com/Nwokike/DDGS" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </div>
+          </article>
 
-          <li class="work-item">
-            <a class="work-link" href="https://github.com/Nwokike/Archives-Agent" target="_blank">
-              <div class="work-meta">
-                <span class="work-num">08</span>
-                <span class="work-title">Igbo Archives Agent</span>
-              </div>
-              <div class="work-info">
-                <span class="work-desc">Autonomous agent pipeline · vision + audio analysis, web research</span>
-                <span class="work-arrow"><i class="fas fa-arrow-right"></i></span>
-              </div>
+          <article class="card reveal" data-cat="apps">
+            <a class="card-media" href="https://play.google.com/store/apps/details?id=ng.kiri.akili" target="_blank" rel="noopener" aria-label="Get Akili on Google Play">
+              <img src="images/work/card-akili.jpg" alt="Akili learning app dashboard" width="1200" height="900" loading="lazy">
+              <span class="status live">Live</span>
             </a>
-          </li>
+            <div class="card-body">
+              <div class="card-top"><h3>Akili</h3><span class="year">2025</span></div>
+              <p>AI learning app with generated curricula, lessons, quizzes, mock exams and a voice and image tutor.</p>
+              <ul class="tags"><li>Flet</li><li>AI</li><li>Education</li></ul>
+              <div class="card-links">
+                <a href="https://play.google.com/store/apps/details?id=ng.kiri.akili" target="_blank" rel="noopener">Play Store <svg class="i" aria-hidden="true"><use href="#i-ext"/></svg></a>
+                <a href="https://github.com/Nwokike/akili-app" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </div>
+          </article>
 
-        </ol>
-        <a class="see-all" href="https://github.com/Nwokike?tab=repositories" target="_blank">View all 31 repositories on GitHub <i class="fas fa-arrow-right"></i></a>
+          <article class="card reveal" data-cat="tools">
+            <a class="card-media" href="https://pypi.org/project/flet-mcp-server/" target="_blank" rel="noopener" aria-label="Open Flet MCP Server on PyPI">
+              <img src="images/work/card-fletmcp.jpg" alt="Flet MCP Server verification output" width="1200" height="900" loading="lazy">
+              <span class="status oss">Open source</span>
+            </a>
+            <div class="card-body">
+              <div class="card-top"><h3>Flet MCP Server</h3><span class="year">2025</span></div>
+              <p>MCP server that reads the installed Flet source and verifies AI-written Flet code before delivery.</p>
+              <ul class="tags"><li>MCP</li><li>Python</li><li>PyPI</li></ul>
+              <div class="card-links">
+                <a href="https://pypi.org/project/flet-mcp-server/" target="_blank" rel="noopener">PyPI <svg class="i" aria-hidden="true"><use href="#i-ext"/></svg></a>
+                <a href="https://github.com/Nwokike/flet-mcp-server" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="more">
+          <div class="more-head">More shipped · selected</div>
+          <div class="more-row">
+            <div class="more-name">KTV Player</div>
+            <div class="more-desc">IPTV player with D-pad navigation for TVs and phones.</div>
+            <a class="more-link" href="https://play.google.com/store/apps/details?id=ng.kiri.ktvplayer" target="_blank" rel="noopener">Play Store ↗</a>
+          </div>
+          <div class="more-row">
+            <div class="more-name">VisionLM</div>
+            <div class="more-desc">Zero-key gateway for image, video, audio and 3D generation.</div>
+            <span class="more-link">Private</span>
+          </div>
+          <div class="more-row">
+            <div class="more-name">Data-Formulator</div>
+            <div class="more-desc">AI-assisted data transformation and visualization on device.</div>
+            <span class="more-link">Private</span>
+          </div>
+          <div class="more-row">
+            <div class="more-name">Museum Scrapers</div>
+            <div class="more-desc">Async digital-humanities toolkit for five museum archives.</div>
+            <a class="more-link" href="https://github.com/Nwokike/museum-scrapers-python" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+          <div class="more-row">
+            <div class="more-name">NewsCheck AI</div>
+            <div class="more-desc">NLP app for news credibility, sentiment and clickbait detection.</div>
+            <a class="more-link" href="https://newscheckai.streamlit.app/" target="_blank" rel="noopener">Live app ↗</a>
+          </div>
+          <div class="more-row">
+            <div class="more-name">Igbo Archives Agents</div>
+            <div class="more-desc">Autonomous vision, audio and research pipelines for the archive.</div>
+            <span class="more-link">Private</span>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="section" id="research">
-      <div class="container">
-        <h2 class="section-head">AI/ML Research & Model Training</h2>
-        <ol class="work-list">
+      <div class="wrap research-grid">
+        <div class="research-intro">
+          <p class="kicker">02 / Research</p>
+          <h2>Models, datasets and low-resource NLP.</h2>
+          <p>
+            I work on Igbo and Nigerian-language AI: speech recognition, bilingual models and
+            cultural-heritage datasets for Digital Humanities.
+          </p>
+          <div class="facts">
+            <div><div class="fact-num">4</div><div class="fact-label">models</div></div>
+            <div><div class="fact-num">9</div><div class="fact-label">datasets</div></div>
+            <div><div class="fact-num">700k</div><div class="fact-label">training examples</div></div>
+          </div>
+          <p style="margin-top:26px">
+            <a class="btn btn-ghost" href="https://huggingface.co/nwokikeonyeka" target="_blank" rel="noopener">Hugging Face profile <svg class="i" aria-hidden="true"><use href="#i-ext"/></svg></a>
+          </p>
+        </div>
 
-          <li class="work-item">
-            <a class="work-link" href="https://huggingface.co/KiriLabs/Naija-Moonshine-v1-Base" target="_blank">
-              <div class="work-meta">
-                <span class="work-num">01</span>
-                <span class="work-title">Naija-Moonshine-v1-Base</span>
-              </div>
-              <div class="work-info">
-                <span class="work-desc">Nigerian-accented speech model · custom tokenizer, Pidgin linguistics</span>
-                <span class="work-arrow"><i class="fas fa-arrow-right"></i></span>
-              </div>
-            </a>
-          </li>
+        <div class="model-list">
+          <a class="model" href="https://huggingface.co/KiriLabs/Naija-Moonshine-v1-Base" target="_blank" rel="noopener">
+            <div class="model-top"><h3>Naija-Moonshine-v1-Base</h3><span class="model-type">Speech</span></div>
+            <p>0.1B Moonshine ASR with a custom Naija tokenizer for low-resource accents and Pidgin.</p>
+            <div class="model-meta"><span>KiriLabs</span><span>0.1B params</span><span>ASR</span></div>
+          </a>
 
-          <li class="work-item">
-            <a class="work-link" href="https://huggingface.co/nwokikeonyeka" target="_blank">
-              <div class="work-meta">
-                <span class="work-num">02</span>
-                <span class="work-title">Igbo Cultural Heritage Datasets</span>
-              </div>
-              <div class="work-info">
-                <span class="work-desc">8 datasets · Pitt Rivers, British Museum, MAA Cambridge</span>
-                <span class="work-arrow"><i class="fas fa-arrow-right"></i></span>
-              </div>
-            </a>
-          </li>
+          <a class="model" href="https://huggingface.co/nwokikeonyeka/Igbo-Phi3-Bilingual-Chat-v1-merged" target="_blank" rel="noopener">
+            <div class="model-top"><h3>Igbo-Phi3 Bilingual Chat</h3><span class="model-type">LLM</span></div>
+            <p>Phi-3-mini fine-tuned on 700,000 examples for Igbo and English conversation.</p>
+            <div class="model-meta"><span>Phi-3-mini</span><span>44,500 steps</span><span>GGUF</span></div>
+          </a>
 
-          <li class="work-item">
-            <a class="work-link" href="https://github.com/Nwokike/igbo-bilingual-chat" target="_blank">
-              <div class="work-meta">
-                <span class="work-num">03</span>
-                <span class="work-title">Igbo Bilingual Chat</span>
-              </div>
-              <div class="work-info">
-                <span class="work-desc">Fine-tuned Phi-3-mini · 700k examples, 44,500 steps</span>
-                <span class="work-arrow"><i class="fas fa-arrow-right"></i></span>
-              </div>
-            </a>
-          </li>
+          <a class="model" href="https://huggingface.co/nwokikeonyeka/igbo-phi3-translator" target="_blank" rel="noopener">
+            <div class="model-top"><h3>Igbo-Phi3 Translator</h3><span class="model-type">LLM</span></div>
+            <p>English to Igbo fine-tune, exported to GGUF for local inference.</p>
+            <div class="model-meta"><span>Phi-3-mini</span><span>Translation</span><span>GGUF</span></div>
+          </a>
 
-          <li class="work-item">
-            <a class="work-link" href="https://github.com/Nwokike/museum-scrapers-python" target="_blank">
-              <div class="work-meta">
-                <span class="work-num">04</span>
-                <span class="work-title">Museum Scrapers Python</span>
-              </div>
-              <div class="work-info">
-                <span class="work-desc">Async scraping toolkit · 5 institutions, IIIF max-resolution extraction</span>
-                <span class="work-arrow"><i class="fas fa-arrow-right"></i></span>
-              </div>
-            </a>
-          </li>
+          <a class="model" href="https://huggingface.co/nwokikeonyeka" target="_blank" rel="noopener">
+            <div class="model-top"><h3>Igbo Heritage Datasets</h3><span class="model-type">Datasets</span></div>
+            <p>Nine structured collections from Pitt Rivers, British Museum, MAA Cambridge, G.I. Jones, Re-entanglements and Ukpuru.</p>
+            <div class="model-meta"><span>9 datasets</span><span>IIIF</span><span>Digital Humanities</span></div>
+          </a>
 
-        </ol>
-        <a class="see-all" href="https://huggingface.co/nwokikeonyeka" target="_blank">View all models & datasets on Hugging Face <i class="fas fa-arrow-right"></i></a>
+          <a class="model" href="https://huggingface.co/KiriLabs" target="_blank" rel="noopener">
+            <div class="model-top"><h3>Kiri Naija Voice Dataset</h3><span class="model-type">Dataset</span></div>
+            <p>Speech corpus for Nigerian-accented ASR and voice model training.</p>
+            <div class="model-meta"><span>KiriLabs</span><span>Audio</span><span>ASR</span></div>
+          </a>
+        </div>
       </div>
     </section>
 
     <section class="section" id="about">
-      <div class="container about-grid">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="kicker">03 / About</p>
+            <h2>Engineer, researcher, founder.</h2>
+          </div>
+        </div>
+
+        <div class="about-grid">
+          <div>
+            <img class="about-photo" src="images/FB_IMG.jpg" alt="Onyeka Nwokike" width="1080" height="1080" loading="lazy">
+            <p class="about-text">
+              I'm Onyeka, a software engineer and researcher in Enugu, Nigeria. I build
+              cross-platform apps for Android, Windows and Linux, plus developer tools and AI systems,
+              mostly in Python and Flet.
+            </p>
+            <p class="about-text">
+              I founded <a href="https://kiri.ng" target="_blank" rel="noopener">Kiri Research Labs</a>,
+              which builds lightweight software for edge intelligence: small tools that run on phones,
+              low-memory servers and constrained networks.
+            </p>
+            <p class="about-text">
+              I studied Agricultural and Bioresources Engineering at the University of Nigeria,
+              Nsukka. That background still shapes how I think about systems and constraints.
+            </p>
+            <div class="now">
+              <div class="now-title">Now</div>
+              <ul>
+                <li>Shipping FFmpeg AV, Proot Distro X11 and Asase.</li>
+                <li>Building autonomous ingestion agents for Igbo Archives.</li>
+                <li>Open to engineering and research roles.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="stack">
+            <div class="stack-title">Stack</div>
+            <div class="stack-row"><div class="stack-key">Languages</div><div class="stack-val">Python, TypeScript, JavaScript, Rust, SQL, Bash</div></div>
+            <div class="stack-row"><div class="stack-key">Apps</div><div class="stack-val">Flet (Flutter), React, Vite, Tailwind, HTMX</div></div>
+            <div class="stack-row"><div class="stack-key">Backend</div><div class="stack-val">Django, FastAPI, DRF, Cloudflare Workers, REST</div></div>
+            <div class="stack-row"><div class="stack-key">AI/ML</div><div class="stack-val">Google ADK, LiteLLM, MCP, Hugging Face, LoRA/PEFT, PyTorch, scikit-learn, Pandas, NumPy</div></div>
+            <div class="stack-row"><div class="stack-key">Media &amp; systems</div><div class="stack-val">PyAV/FFmpeg, proot, X11/Xvnc, noVNC, QEMU, Playwright</div></div>
+            <div class="stack-row"><div class="stack-key">Data</div><div class="stack-val">SQLite (WAL), PostgreSQL, MySQL</div></div>
+            <div class="stack-row"><div class="stack-key">Deploy</div><div class="stack-val">Linux, GCP, Azure, Oracle Cloud, Render, Cloudflare, GitHub Actions</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="wrap contact-grid">
         <div>
-          <h2 class="section-head">About</h2>
-          <img src="images/FB_IMG.jpg" alt="Onyeka Nwokike" class="about-photo" loading="lazy"/>
-          <p class="about-text">
-            I'm a software engineer based in Enugu, Nigeria. I build web apps, mobile apps, AI agents, data tools, and APIs for clients locally and abroad.
-          </p>
-          <p class="about-text">
-            Founder of <a href="https://kiri.ng" target="_blank" class="inline-link">Kiri Research Labs</a>. Background in Agricultural & Bioresources Engineering from the University of Nigeria, Nsukka.
-          </p>
+          <p class="kicker">04 / Contact</p>
+          <h2>Have something<br>worth building?</h2>
+          <a class="contact-email" href="mailto:nwokikeonyeka@gmail.com">nwokikeonyeka@gmail.com</a>
         </div>
-        <div class="stack">
-          <h3 class="stack-title">Stack</h3>
-          <ul class="stack-list">
-            <li><span class="stack-key">Languages</span> Python</li>
-            <li><span class="stack-key">Mobile & Agents</span> Flet, Google ADK, MCP, Playwright</li>
-            <li><span class="stack-key">Backend</span> Django, Fast API, CloudFlare Worker, REST APIs</li>
-            <li><span class="stack-key">AI/ML</span> Hugging Face, fine-tuning (LoRA/PEFT), Scikit-learn, Pandas, NumPy</li>
-            <li><span class="stack-key">Web</span> HTML, CSS, JavaScript, HTMX, Tailwind</li>
-            <li><span class="stack-key">Database</span> SQLite, PostgreSQL, MySQL</li>
-            <li><span class="stack-key">Deploy</span> Linux, Google Cloud, Azure, Oracle Cloud, Render</li>
-          </ul>
+        <div class="contact-links">
+          <a href="https://github.com/Nwokike" target="_blank" rel="noopener"><svg class="i fill" aria-hidden="true"><use href="#i-github"/></svg> GitHub</a>
+          <a href="https://www.linkedin.com/in/onyeka-nwokike" target="_blank" rel="noopener"><svg class="i fill" aria-hidden="true"><use href="#i-linkedin"/></svg> LinkedIn</a>
+          <a href="https://huggingface.co/nwokikeonyeka" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-smile"/></svg> Hugging Face</a>
+          <a href="https://pypi.org/project/flet-mcp-server/" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-box"/></svg> PyPI</a>
+          <p class="footer-muted" style="font-size:12.5px;margin-top:6px">Enugu, Nigeria · Working worldwide</p>
         </div>
       </div>
     </section>
-
-    <section class="contact">
-      <div class="container">
-        <p class="contact-eyebrow">Let's work together</p>
-        <h2 class="contact-title">
-          <a href="mailto:nwokikeonyeka@gmail.com">nwokikeonyeka@gmail.com</a>
-        </h2>
-        <div class="hero-socials">
-          <a href="https://www.fiverr.com/maikel7" target="_blank" aria-label="Fiverr"><i class="fas fa-globe"></i> Fiverr</a>
-          <a href="https://github.com/Nwokike" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i> GitHub</a>
-          <a href="https://www.linkedin.com/in/onyeka-nwokike" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i> LinkedIn</a>
-          <a href="https://huggingface.co/nwokikeonyeka" target="_blank" aria-label="Hugging Face"><i class="fas fa-face-smile"></i> Hugging Face</a>
-        </div>
-      </div>
-    </section>
-
   </main>
 
   <footer class="footer">
-    <div class="container footer-inner">
-      <span>&copy; <span id="year"></span> Onyeka Nwokike</span>
-      <span class="footer-muted">Enugu, Nigeria · <a href="https://kiri.ng" target="_blank" class="footer-link">Kiri Research Labs</a></span>
+    <div class="wrap footer-inner">
+      <span>© <span id="year"></span> Onyeka Nwokike</span>
+      <span class="footer-muted">Enugu, Nigeria · <a href="https://kiri.ng" target="_blank" rel="noopener">Kiri Research Labs</a></span>
+      <span class="footer-muted">Work updated November 2026</span>
     </div>
   </footer>
 
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Onyeka Nwokike",
+    "url": "https://nwokike.github.io/",
+    "image": "https://nwokike.github.io/images/FB_IMG.jpg",
+    "jobTitle": "Software Engineer & Researcher",
+    "email": "mailto:nwokikeonyeka@gmail.com",
+    "worksFor": { "@type": "Organization", "name": "Kiri Research Labs", "url": "https://kiri.ng" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "University of Nigeria, Nsukka" },
+    "address": { "@type": "PostalAddress", "addressLocality": "Enugu", "addressCountry": "NG" },
+    "knowsAbout": ["Python", "Flet", "Cross-platform desktop apps", "Django", "AI agents", "Model Context Protocol", "Hugging Face", "Linux on Android", "Digital Humanities"],
+    "sameAs": [
+      "https://github.com/Nwokike",
+      "https://www.linkedin.com/in/onyeka-nwokike",
+      "https://huggingface.co/nwokikeonyeka"
+    ]
+  }
+  </script>
   <script src="js/script.js"></script>
 </body>
 </html>
